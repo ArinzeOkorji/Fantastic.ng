@@ -1,0 +1,828 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">Fantastic.ng</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <a routerLink="login" class="navbar-brand">Login</a>
+    </div>
+  </div>
+</nav> -->
+
+
+
+<div id="hero" class="">
+  <div class="layer1">
+
+    <mdb-navbar SideClass="navbar navbar-expand-lg  navbar-dark" id="desktopDropdown">
+
+      <links>
+        <ul class="navbar-nav" id="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link white-text font-weight-bold small mr-2 px-2 active" id="nav-link">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link white-text font-weight-bold small mx-2 px-2" id="nav-link">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link white-text font-weight-bold small mx-2 px-2" id="nav-link">HOW TO PLAY</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link white-text font-weight-bold small mx-2 px-2" id="nav-link">TESTIMONIAL</a>
+          </li>
+        </ul>
+
+        <form action="" class="form-inline ml-auto" id="navbar-auth">
+          <div class=" ">
+            <!-- <button class="btn grey btn-sm">LogIn</button>
+          <button class="btn red btn-sm">SignUp</button> -->
+            <button type="button" (click)="loginmodal.show()" class="blue-grey darken-4 m-0 rounded-0 border btn-sm waves-light relative"
+              mdbWavesEffect mdbBtn>LogIn</button>
+            <!-- <app-auth></app-auth> -->
+            <button type="button" class="transparent m-0 border rounded-0 btn-sm relative red" mdbBtn mdbWavesEffect
+              (click)="SignUpmodal.show()">SignUp</button>
+            <!-- <button type="button" class="transparent m-0 border rounded-0 btn-sm relative red" mdbBtn mdbWavesEffect>SignUp</button> -->
+          </div>
+        </form>
+      </links>
+
+    </mdb-navbar>
+
+    <nav id="mobileDropdown">
+      <div class="navbar navbar-expand-lg navbar-dark py-1 d-flex" id="mobileNavbar">
+
+
+        <div dropdown class="dropdown">
+          <button type="button" (click)="buttonClick()" class="navbar-toggler">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- <div class="dropdown dropdown-menu" id="navMenu" *dropdownMenu>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="" class="nav-link ml-3">HOME</a>
+              </li>
+              <div class="dropdown-divider"></div>
+              <li class="nav-item">
+                <a href="" class="nav-link ml-3">ABOUT</a>
+              </li>
+              <div class="dropdown-divider"></div>
+              <li class="nav-item">
+                <a href="" class="nav-link ml-3">HOW TO PLAY</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link ml-3">TESTIMONIAL</a>
+              </li>
+            </ul>
+          </div> -->
+
+
+        </div>
+
+
+        <form action="" class="form-inline ml-auto" id="mobileAuth">
+          <div class=" ">
+            <!-- <button class="btn grey btn-sm">LogIn</button>
+                <button class="btn red btn-sm">SignUp</button> -->
+            <button type="button" (click)="loginmodal.show()" class="blue-grey darken-4 m-0 rounded-0 border btn-sm waves-light relative"
+              mdbWavesEffect mdbBtn>LogIn</button>
+            <!-- <app-auth></app-auth> -->
+            <button type="button" class="transparent m-0 border rounded-0 btn-sm relative red" mdbBtn mdbWavesEffect
+              (click)="SignUpmodal.show()">SignUp</button>
+            <!-- <button type="button" class="transparent m-0 border rounded-0 btn-sm relative red" mdbBtn mdbWavesEffect>SignUp</button> -->
+          </div>
+        </form>
+
+
+      </div>
+    </nav>
+
+    <div id="mobileDropdown" class="z-depth-4">
+      <div [hidden]="!toggle" id="mobileNav">
+        <ul class="navbar-nav">
+          <li class="mx-1 ml-4  nav-item">
+            <a href='#' class="waves-light nav-link active" id="nav-links" mdbWavesEffect>HOME</a>
+          </li>
+          <li class="mx-1 ml-4  nav-item">
+            <a href='#' class="waves-light nav-link" id="nav-links" mdbWavesEffect>ABOUT US</a>
+          </li>
+          <li class="mx-1 ml-4  nav-item">
+            <a href='#' class="waves-light nav-link" id="nav-links" mdbWavesEffect>EARN COINS</a>
+          </li>
+          <li class="mx-1 ml-4  nav-item">
+            <a href='#' class="waves-light nav-link" id="nav-links" mdbWavesEffect>HOW TO PLAY</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <aside class="card card-aside py-2 float-right rounded-0 pl-2 contact">
+      <div class="d-flex black-text">
+        <div>
+          <i class="fas fa-mobile-alt pl-1 d-block"></i>
+          <i class="fas fa-envelope mt-2"></i>
+        </div>
+        <div class="ml-2">
+          <span class="d-block small">Helpline: +234-1234567890</span>
+          <span class="small">Email: Help@fantastic.ng</span>
+        </div>
+      </div>
+    </aside>
+
+
+
+    <!-- Modal section -->
+    <div class="modal fade" #loginmodal='mdbModal' tabindex="-1" mdbModal>
+      <div class="modal-dialog ">
+        <div class="modal-content">
+          <div class="modal-header d-flex font-weight-bold">
+            <span>LOGIN</span>
+            <div class="ml-auto">
+              <span class="mr-5">Not a member?
+                <a class="red-text ml-2" (click)="SignUpmodal.show()" (click)="loginmodal.hide()">Sign Up</a>
+              </span>
+              <span class="close" (click)="loginmodal.hide()">&times;</span>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <button class="waves-light relative red  d-block mx-auto py-2" mdbBtn mdbWavesEffect id="btn">Log in with
+                Gmail</button>
+              <button class="waves-light relative indigo mt-3  d-block mx-auto py-2" mdbBtn mdbWavesEffect id="btn">
+                <i class="fab fa-facebook-f"></i>Log in with facebook</button>
+
+
+
+              <div class="d-flex align-items-center">
+                <span class="or"></span>
+                <span class="px-2">or</span>
+                <span class="or"></span>
+              </div>
+              <form action="">
+                <div class="md-form ">
+                  <input type="email" id="loginemail" class="   form-control" mdbInputDirective>
+                  <label for="loginemail">Your Email</label>
+                </div>
+
+                <div class="md-form ">
+                  <input type="password" id="password" class="    form-control " mdbInputDirective>
+                  <label for="password">Your Password</label>
+                </div>
+
+                <div>
+                  <div class="d-flex">
+                    <a href="#" class=' blue-text mt-3 ml-auto font-weight-bold'>Forgot password?</a>
+                  </div>
+                  <div class="d-flex mt-3">
+
+                    <mdb-checkbox [default]="true" class="pt-3">Remember me</mdb-checkbox>
+
+
+
+
+                  </div>
+                  <button class="waves-light relative red  d-block mx-auto py-2" mdbBtn mdbWavesEffect id="btn">Log in</button>
+
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- login modal ends -->
+
+    <!-- sign up modal -->
+
+    <div class="modal fade" #SignUpmodal="mdbModal" tabindex="1" mdbModal>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header d-flex">
+            <h6 class="mr-auto font-weight-bold">SIGN UP</h6>
+            <h6 class="ml-auto">
+              <span class="mr-4 small font-weight-bold">Already a member?
+                <span class="red-text">
+                  <a (click)="loginmodal.show()" (click)="SignUpmodal.hide()">LOGIN</a>
+                </span>
+              </span>
+              <span class="close" (click)='SignUpmodal.hide()'>&times;</span>
+            </h6>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+
+              <button class="waves-light relative red  d-block mx-auto py-2" mdbBtn mdbWavesEffect id="btn">Sign up
+                with Gmail</button>
+              <button class="waves-light relative indigo mt-3  d-block mx-auto py-2" mdbBtn mdbWavesEffect id="btn">
+                <i class="fab fa-facebook-f"></i>Sign up with facebook</button>
+
+
+              <div class="d-flex align-items-center">
+                <span class="or"></span>
+                <span class="px-2">or</span>
+                <span class="or"></span>
+              </div>
+
+              <form action="" class="mt-3">
+                <div class="md-form">
+                  <input type="text" class="form-control mb-4 " mdbInputDirective id="firstname">
+                  <label for="firstname">First Name</label>
+                </div>
+                <div class="md-form">
+                  <input type="text" class="form-control mb-4 mt-4" mdbInputDirective id="lastname">
+                  <label for="lastname">Last Name</label>
+                </div>
+                <div class="md-form">
+                  <input type="email" class="form-control mb-4 mt-4" mdbInputDirective id="emailaddress">
+                  <label for="emailaddress">Email Address</label>
+                </div>
+                <div class="md-form">
+                  <input type="password" class="form-control mb-4 mt-4" mdbInputDirective id="password">
+                  <label for="password">Password</label>
+                </div>
+                <div class="md-form">
+                  <input type="date" class="form-control mb-4 mt-4" mdbInputDirective id="date" placeholder="">
+                  <label for="date">Date</label>
+                </div>
+              </form>
+
+              <div class="d-flex pb-4">
+                <div class="form-check mr-auto pl-0  align-self-center small">
+                  <mdb-checkbox for="checkbox" [default]="true">I agree to FANtastic Tech's
+                    <a class="text-info">T&amp;C</a>
+                  </mdb-checkbox>
+
+                </div>
+
+              </div>
+              <button class="waves-light relative red  d-block mx-auto py-2" mdbBtn mdbWavesEffect id="btn">Start
+                playing</button>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- hero message begin -->
+    <div class="container">
+      <div class="text-center text-light pt-5" id="hero-content">
+
+        <img src="assets/images/logo-main-inner.png" class='white' alt="FANtastic log" id="FANtastic_log">
+
+
+        <h2 class="py-4 my-3">Play Free</h2>
+        <h1 class="font-weight-bold display-3 pt-2 pb-3 mt-3">Fantasy Football</h1>
+        <h2>Sign up | Join Contest | Select Team | Win Prizes!
+        </h2>
+        <button class="relative mt-4 text-light red accent-4" mdbBtn mdbWavesEffect id="startbtn">START!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+</div>
+
+
+<div id="hero2">
+  <div class="layer1">
+    <div id="hero2-message">
+      <div id="aboutcontainer">
+        <h2 id="aboutSomething">about us</h2>
+      </div>
+
+      <section id="section1" class="slideanim">
+        <p>Fantastic.ng hosts match day contests across the five major European leagues (English, French, Spanish,
+          Italian,
+          German) and the UEFA Champions league.</p>
+        <br>
+        <p>Each contest will specify the parameters so for example one EPL contest might be just for the games on a
+          saturday
+          while another might include games on saturday, sunday and monday. In the first example, the winner is known
+          at
+          the end of the last game on saturday. In the second example, the contest would end and winner declared after
+          the
+          last game on monday night.</p>
+      </section>
+
+      <p id="para">This is edge of your seat Fantasy</p>
+      <section id="section2" class="slideanim">
+        <p>Fantastic.ng hosts match day contests across the five major European leagues (English, French, Spanish,
+          Italian,
+          German) and the UEFA Champions league.</p>
+        <br>
+        <p>Each contest will specify the parameters so for example one EPL contest might be just for the games on a
+          saturday
+          while another might include games on saturday, sunday and monday. In the first example, the winner is known
+          at
+          the end of the last game on saturday. In the second example, the contest would end and winner declared after
+          the
+          last game on monday night.</p>
+      </section>
+    </div>
+  </div>
+</div>
+<div id="hero3">
+  <div class="layer1">
+    <div id="hero3-message">
+      <h1>How to play</h1>
+      <div id="flex">
+        <mdb-card class="mb-4 slideanim" id="card">
+          <section>
+            <h3>Build A Team</h3>
+
+          </section>
+        </mdb-card>
+        <mdb-card class="mb-4 slideanim" id="card">
+          <section>
+            <h3>Play Contest</h3>
+
+          </section>
+        </mdb-card>
+        <mdb-card class="mb-4 slideanim" id="card">
+          <section>
+            <h3>Win Prizes</h3>
+
+          </section>
+        </mdb-card>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="hero4">
+  <div class="layer1">
+    <div id="hero4-message">
+      <h1>Key Features</h1>
+      <div id="flex">
+        <mdb-card class="mb-4 slideanim" id="card">
+          <section>
+            <h3>Earn Coins</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde praesentium iste, quos harum quas
+              deserunt illo
+              rem laboriosam. Sint explicabo quibusdam quam voluptatibus animi aliquam minima non laudantium odio
+              quisquam!
+            </p>
+          </section>
+        </mdb-card>
+        <mdb-card class="mb-4 slideanim" id="card">
+          <section>
+            <h3>Auto Pick</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde praesentium iste, quos harum quas
+              deserunt illo
+              rem laboriosam. Sint explicabo quibusdam quam voluptatibus animi aliquam minima non laudantium odio
+              quisquam!
+            </p>
+          </section>
+        </mdb-card>
+        <mdb-card class="mb-4 slideanim" id="card">
+          <section>
+            <h3>Chat</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde praesentium iste, quos harum quas
+              deserunt illo
+              rem laboriosam. Sint explicabo quibusdam quam voluptatibus animi aliquam minima non laudantium odio
+              quisquam!
+            </p>
+          </section>
+        </mdb-card>
+        <mdb-card class="mb-4 slideanim" id="card">
+          <section>
+            <h3>Private contents</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde praesentium iste, quos harum quas
+              deserunt illo
+              rem laboriosam. Sint explicabo quibusdam quam voluptatibus animi aliquam minima non laudantium odio
+              quisquam!
+            </p>
+          </section>
+        </mdb-card>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="hero5">
+  <div id="hero5-message">
+    <h1>Let's Play</h1>
+    <button id=" firstbutton" class="btn">START!</button>
+  </div>
+</div>
+<div id="footer" class="d-flex grey px-2">
+  <div class="mr-auto">
+    <span class="d-block">&copy; Copyrights 2017</span>
+    <span>FANtastic.ng</span>
+  </div>
+  <div class="ml-auto">
+    <span class="d-block">FANTASY SPORTS</span>
+    <a href="" class="d-block">About</a>
+    <a href="" class="d-block">Fantasy Sports</a>
+    <a href="" class="d-block">Press & Media</a>
+  </div>
+  <div>
+    <span class="d-block">Help</span>
+    <a href="" class="d-block">Support</a>
+    <a href="" class="d-block">How it Works</a>
+    <a href="" class="d-block">Rules & Scoring</a>
+  </div>
+  <div>
+    <span class="d-block">More</span>
+    <a href="" class="d-block">Testimonials</a>
+    <a href="" class="d-block">Terms of Use</a>
+    <a href="" class="d-block">Privacy Policy</a>
+  </div>
+</div>
+<div id="footer" class="grey px-2">
+  <div class="d-block">
+    <span class="d-block">&copy; Copyrights 2017</span>
+    <span>FANtastic.ng</span>
+  </div>
+  <br>
+  <div class="d-flex align-items-center">
+    <div class="px-4">
+      <span class="d-block">FANTASY SPORTS</span>
+      <a href="" class="d-block my-1">About</a>
+      <a href="" class="d-block my-1">Fantasy Sports</a>
+      <a href="" class="d-block my-1">Press & Media</a>
+    </div>
+    <div class="px-4">
+      <span class="d-block">Help</span>
+      <a href="" class="d-block my-1">Support</a>
+      <a href="" class="d-block my-1">How it Works</a>
+      <a href="" class="d-block my-1">Rules & Scoring</a>
+    </div>
+    <div class="px-4">
+      <span class="d-block">More</span>
+      <a href="" class="d-block my-1">Testimonials</a>
+      <a href="" class="d-block my-1">Terms of Use</a>
+      <a href="" class="d-block my-1">Privacy Policy</a>
+    </div>
+  </div>
+</div>
+
+<!-- ====HERO STARTS -->
+<div id="hero" class="">
+
+  <!-- Desktop Navbar starts -->
+  <mdb-navbar SideClass="navbar navbar-expand-lg white py-3" id="desktopDropdown">
+
+    <!-- <mdb-navbar-brand>
+      <img src="assets/images/logo/logo.png" alt=""id="logo">
+    </mdb-navbar-brand> -->
+    <links>
+      <ul class="navbar-nav pt-3" id="navbar-nav">
+        <li class="nav-item">
+          <a href="" class="nav-link black-text font-weight-bold small mr-2 px-2 active" id="nav-link">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link black-text font-weight-bold small mx-2 px-2" id="nav-link">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link black-text font-weight-bold small mx-2 px-2" id="nav-link">HOW TO PLAY</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link black-text font-weight-bold small mx-2 px-2" id="nav-link">TESTIMONIAL</a>
+        </li>
+      </ul>
+
+
+
+      <form action="" class="form-inline ml-auto" id="navbar-auth">
+        <div class=" ">
+          <button type="button" (click)="loginmodal.show()" id="login" class="relative waves black-text p-0 ml-auto"
+            mdbBtn mdbWavesEffect>Log In</button>
+          <!-- <button class="btn grey btn-sm">LogIn</button>
+          <button class="btn red btn-sm">SignUp</button> -->
+          <!-- <button type="button" (click)="loginmodal.show()" class="blue-grey darken-4 m-0 rounded-0 border btn-sm waves-light relative"
+            mdbWavesEffect mdbBtn>LogIn</button> -->
+          <!-- <app-auth></app-auth> -->
+          <!-- <button type="button" class="transparent m-0 border rounded-0 btn-sm relative red" mdbBtn mdbWavesEffect
+            (click)="SignUpmodal.show()">SignUp</button> -->
+          <!-- <button type="button" class="transparent m-0 border rounded-0 btn-sm relative red" mdbBtn mdbWavesEffect>SignUp</button> -->
+        </div>
+      </form>
+    </links>
+
+  </mdb-navbar>
+
+  <!-- Desktop Navbar starts -->
+
+
+  <!-- Mobile navbar begins  -->
+  <nav id="mobileDropdown">
+    <div class="navbar navbar-expand-lg navbar-light py-2 d-flex  white" id="mobileNavbar">
+
+
+      <!-- <div>
+        <img src="assets/images/logo/logo_F.png" width="41px" height="28px" alt="">
+      </div> -->
+
+
+
+      <div dropdown class="dropdown">
+        <button type="button" (click)="buttonClick()" class="navbar-toggler">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <!-- <button type="button" class="transparent m-0 border rounded-0 btn-sm relative red" mdbBtn mdbWavesEffect>SignUp</button> -->
+
+      </div>
+      <button type="button" (click)="loginmodal.show()" id="login" class="relative waves black-text p-0 ml-auto" mdbBtn
+        mdbWavesEffect>Log In</button>
+
+
+
+    </div>
+  </nav>
+  <!-- Mobile navbar ends  -->
+
+
+
+
+
+
+  <!-- Modal section -->
+  <div class="modal fade" #loginmodal='mdbModal' tabindex="-1" mdbModal>
+    <div class="modal-dialog ">
+      <div class="modal-content">
+        <div class="modal-header d-flex font-weight-bold">
+          <span>LOGIN</span>
+          <div class="ml-auto">
+            <span class="mr-5">Not a member?
+              <a class="red-text ml-2" (click)="SignUpmodal.show()" (click)="loginmodal.hide()">Sign Up</a>
+            </span>
+            <span class="close" (click)="loginmodal.hide()">&times;</span>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <button class="waves-light relative red  d-block mx-auto py-2" mdbBtn mdbWavesEffect id="btn">Log in with
+              Gmail</button>
+            <button class="waves-light relative indigo mt-3  d-block mx-auto py-2" mdbBtn mdbWavesEffect id="btn">
+              <i class="fab fa-facebook-f"></i>Log in with facebook</button>
+
+
+
+            <div class="d-flex align-items-center">
+              <span class="or"></span>
+              <span class="px-2">or</span>
+              <span class="or"></span>
+            </div>
+            <form action="">
+              <div class="md-form ">
+                <input type="email" id="loginemail" class="   form-control" mdbInputDirective>
+                <label for="loginemail">Your Email</label>
+              </div>
+
+              <div class="md-form ">
+                <input type="password" id="password" class="    form-control " mdbInputDirective>
+                <label for="password">Your Password</label>
+              </div>
+
+              <div>
+                <div class="d-flex">
+                  <a href="#" class=' blue-text mt-3 ml-auto font-weight-bold'>Forgot password?</a>
+                </div>
+                <div class="d-flex mt-3">
+
+                  <mdb-checkbox [default]="true" class="pt-3">Remember me</mdb-checkbox>
+
+
+
+
+                </div>
+                <button class="waves-light relative red  d-block mx-auto py-2" mdbBtn mdbWavesEffect id="btn">Log in</button>
+
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- login modal ends -->
+
+  <!-- sign up modal -->
+
+  <div class="modal fade" #SignUpmodal="mdbModal" tabindex="1" mdbModal>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header d-flex">
+          <h6 class="mr-auto font-weight-bold">SIGN UP</h6>
+          <h6 class="ml-auto">
+            <span class="mr-4 small font-weight-bold">Already a member?
+              <span class="red-text">
+                <a (click)="loginmodal.show()" (click)="SignUpmodal.hide()">LOGIN</a>
+              </span>
+            </span>
+            <span class="close" (click)='SignUpmodal.hide()'>&times;</span>
+          </h6>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+
+            <button class="waves-light relative red  d-block mx-auto py-2" mdbBtn mdbWavesEffect id="btn">Sign up with
+              Gmail</button>
+            <button class="waves-light relative indigo mt-3  d-block mx-auto py-2" mdbBtn mdbWavesEffect id="btn">
+              <i class="fab fa-facebook-f"></i>Sign up with facebook</button>
+
+
+            <div class="d-flex align-items-center">
+              <span class="or"></span>
+              <span class="px-2">or</span>
+              <span class="or"></span>
+            </div>
+
+            <form action="" class="mt-3">
+              <div class="md-form">
+                <input type="text" class="form-control mb-4 " mdbInputDirective id="firstname">
+                <label for="firstname">First Name</label>
+              </div>
+              <div class="md-form">
+                <input type="text" class="form-control mb-4 mt-4" mdbInputDirective id="lastname">
+                <label for="lastname">Last Name</label>
+              </div>
+              <div class="md-form">
+                <input type="email" class="form-control mb-4 mt-4" mdbInputDirective id="emailaddress">
+                <label for="emailaddress">Email Address</label>
+              </div>
+              <div class="md-form">
+                <input type="password" class="form-control mb-4 mt-4" mdbInputDirective id="password">
+                <label for="password">Password</label>
+              </div>
+              <div class="md-form">
+                <input type="date" class="form-control mb-4 mt-4" mdbInputDirective id="date" placeholder="">
+                <label for="date">Date</label>
+              </div>
+            </form>
+
+            <div class="d-flex pb-4">
+              <div class="form-check mr-auto pl-0  align-self-center small">
+                <mdb-checkbox for="checkbox" [default]="true">I agree to FANtastic Tech's
+                  <a class="text-info">T&amp;C</a>
+                </mdb-checkbox>
+
+              </div>
+
+            </div>
+            <button class="waves-light relative red  d-block mx-auto py-2" mdbBtn mdbWavesEffect id="btn">Start playing</button>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="layer2">
+    <!-- Mobile Navbar menu dropdown begin -->
+    <div id="mobileDropdown" class="z-depth-4">
+      <div [hidden]="!toggle" id="mobileNav">
+        <ul class="navbar-nav">
+          <li class="mx-1 ml-4 py-2  nav-item">
+            <a href='#' class="waves-light nav-link active" id="nav-links" mdbWavesEffect>HOME</a>
+          </li>
+          <li class="mx-1 ml-4 py-2  nav-item">
+            <a href='#' class="waves-light nav-link" id="nav-links" mdbWavesEffect>ABOUT US</a>
+          </li>
+          <li class="mx-1 ml-4 py-2  nav-item">
+            <a href='#' class="waves-light nav-link" id="nav-links" mdbWavesEffect>EARN COINS</a>
+          </li>
+          <li class="mx-1 ml-4 py-2  nav-item">
+            <a href='#' class="waves-light nav-link" id="nav-links" mdbWavesEffect>HOW TO PLAY</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Mobile Navbar menu dropdown ends -->
+
+    <!-- hero message begin -->
+    <div class="">
+      <div class="">
+        <div class="text-center text-light " id="hero-content">
+
+          <img src="assets/images/logo/logo.png" alt="FANtastic log" id="Fantastic_log1">
+
+
+          <h1 class="pt-4 ">Play Fantasy Football</h1>
+          <h2 class="pt-4 mt-5">Play Fantasy Football</h2>
+          <p class=" pt-1 pb-3 mt-1">Where everyone is a winner</p>
+
+
+          <button class="relative text-light align-items-center" (click)="SignUpmodal.show()" mdbBtn
+            mdbWavesEffect id="startbtn">Join
+            <i class="fas fa-arrow-right white-text ml-3"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="secondSection">
+  <mdb-card class="secondSection-inner text-center mx-auto ">
+    <div class="secondSection-container">
+      <div class="joinContest">
+        <img src="assets/images/Landing-page-icons/football.png" alt="">
+        <h3>Join Contest</h3>
+        <p>Join Contest</p>
+      </div>
+      <div class="buildTeam">
+        <img src="assets/images/Landing-page-icons/Squad-players.png" alt="">
+        <h3>Build Team</h3>
+        <p>Select the team of your choosing</p>
+      </div>
+      <div class="win">
+        <img src="assets/images/Landing-page-icons/Treasure-chest.png" alt="">
+        <h3>Win Prizes</h3>
+        <p>Win cash </p>
+      </div>
+    </div>
+  </mdb-card>
+</div>
+
+<div class=' thirdSection text-center'>
+  <h3>Your Favorite leagues</h3>
+  <mdb-carousel [isControls]='true' [animation]="'slide'">
+    <mdb-carousel-item class="carousel1">
+      <img src="assets/images/Landing-page-icons/Epl_Champion-league.png" class="w-100 d-block" alt="first slide">
+    </mdb-carousel-item>
+    <mdb-carousel-item class="carousel1">
+      <img src="assets/images/Landing-page-icons/Laliga_Bundes-liga.png" class="w-100 d-block" alt="second slide">
+    </mdb-carousel-item>
+    <mdb-carousel-item class="carousel1">
+      <img src="assets/images/Landing-page-icons/Serie-A_Ligue-1.png" class="w-100 d-block" alt="second slide">
+    </mdb-carousel-item>
+  </mdb-carousel>
+
+</div>
+<div>
+  <mdb-card class="fourthSection text-center mx-auto">
+    <div class="winnings">
+      <div>
+        <h3>N1,000,000+</h3>
+        <p>worth of cash paid out - instanty!</p>
+      </div>
+      <div>
+        <h3>N1,000+</h3>
+        <p>winners have emerged</p>
+      </div>
+    </div>
+  </mdb-card>
+</div>
+
+<div class="sixthSection d-flex">
+  <div class="sixthSection-inner mx-auto align-self-center d-flex">
+    <button mdbBtn mdbWavesEffect class="waves-light relative align-self-center mx-auto">Join <i class="fas fa-arrow-right"></i></button>
+  </div>
+</div>
+
+<footer>
+  <div class='d-flex mx-auto'>
+    <img class="mt-2" src="assets/images/logo/logo.png" alt="" id="Fantastic_log2">
+    <a href="" class="ml-auto pr-4"><img src="assets/images/Landing-page-icons/facebook-logo-with-fill.png" alt="" id="footer_facebook"></a>
+    <a href="" class="pr-4"><img src="assets/images/Landing-page-icons/twitter-logo-silhouette.png" alt="" id="footer_twitter"></a>
+    <a><img src="assets/images/Landing-page-icons/instagram.png" alt="" id="footer_instagram"></a>
+  </div>
+  <div class="" id="footer-links-container">
+    <div class="d-flex" id="footer_links_flex">
+      <div>
+        <h6 class="font-weight-bold">Company</h6>
+        <span class="d-block">Refer a friend</span>
+        <span class="d-block">About us</span>
+        <span class="d-block">Contact</span>
+        <span class="d-block">FAQ</span>
+        <span class="d-block">Careers</span>
+        <span class="d-block">Become a sponsor</span>
+      </div>
+      <div class="ml-auto">
+        <h6 class="font-weight-bold">Help</h6>
+        <span class="d-block">Terms of use</span>
+        <span class="d-block">Support</span>
+        <span class="d-block">Our Privacy Policy</span>
+        <span class="d-block">Security</span>
+        <span class="d-block">Legality</span>
+      </div>
+    </div>
+    <div class="text-center ml-auto" id="footer_location">
+      <h6 class="font-weight-bold">Location</h6>
+      <span>No 3, Maitama Sule Street, Lagos. Nigeria</span>
+    </div>
+  </div>
+
+  <div class="text-center pr-3 mt-3">
+    <img src="assets/images/Landing-page-icons/Payment-options.png" alt="">
+  </div>
+</footer>

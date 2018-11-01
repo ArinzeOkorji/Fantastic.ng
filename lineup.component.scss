@@ -1,0 +1,1015 @@
+@mixin for-portrait-phone-only {
+  @media (min-width: 320px) and (max-width: 480px) {
+    @content;
+  }
+}
+
+// Media query size for low Resolution Tablets, Mobiles (Landscape)
+@mixin for-landscape-phone-only {
+  @media (min-width: 481px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+//Media query for Tablets, Ipads (portraits)
+@mixin for-portrait-tablet-and-ipad-only {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+//Media query for Tablets, Ipads (landscape)
+@mixin for-landscape-tablet-and-ipads-only {
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+//Media query Laptops, Desktops
+@mixin for-laptop-and-desktop-only {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
+$sm: 540px;
+$lg: 960px;
+
+@mixin lg {
+  @media (max-width: #{$lg}) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (max-width: #{$sm}) {
+    @content;
+  }
+}
+
+@mixin for-portrait-phone-only {
+  @media (min-width: 320px) and (max-width: 480px) {
+    @content;
+  }
+}
+
+// Media query size for low Resolution Tablets, Mobiles (Landscape)
+@mixin for-landscape-phone-only {
+  @media (min-width: 481px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+//Media query for Tablets, Ipads (portraits)
+@mixin for-portrait-tablet-and-ipad-only {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+//Media query for Tablets, Ipads (landscape)
+@mixin for-landscape-tablet-and-ipads-only {
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+//Media query Laptops, Desktops
+@mixin for-laptop-and-desktop-only {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+#dropdown {
+  margin-right: -110px;
+  @include sm {
+    margin-right: 0px;
+  }
+}
+/*****************************************************************
+********************************* Mobile Navbar starts ***************
+******************************************************************
+*/
+#mobileDropdown {
+  display: none;
+  @include sm {
+    display: block;
+  }
+}
+
+#mobileNav {
+  transition: 0.5s;
+}
+
+#mobileNavbar {
+  border-bottom-color: transparent;
+}
+
+#navMenu {
+  width: 340px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+#logo {
+  @include sm {
+    max-width: 120px;
+    max-height: 60px;
+  }
+  width: 133px;
+  height: 20px;
+}
+
+#dropdown {
+  margin-right: -100px;
+  @include sm {
+    margin-right: 0px;
+  }
+}
+
+/* User icon for dropdown button starts */
+#user-info {
+  @include sm {
+    display: none;
+  }
+}
+
+#user-icon {
+  font-size: 30px;
+}
+
+#user-icon-border {
+  padding: 5px 0px;
+  border: solid 1px rgb(218, 218, 218);
+  border-radius: 50%;
+  @include sm {
+    padding: 7px 4px;
+  }
+}
+#user-icon-border:hover {
+  border: solid 1px rgb(107, 195, 253);
+}
+
+/* User icon for dropdown button ends */
+
+/* links in user dropdown starts */
+
+#dropdown #dropdownlink:hover {
+  background: #4caf50;
+  color: white;
+  transition: 0.3s;
+}
+
+/* links in user dropdown ends */
+/*****************************************************************
+********************************* Mobile Navbar ends ***************
+******************************************************************
+*/
+
+li:hover {
+  background: #4caf50;
+  color: white;
+  transition: 0.3s;
+}
+
+#dropdown-menu {
+  position: absolute;
+  left: -90px;
+  @include sm {
+    left: -190px;
+  }
+}
+.z-depth-4 {
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+}
+#logo {
+  @include sm {
+    max-width: 100px;
+    max-height: 60px;
+  }
+}
+#pitch-lineup {
+  display: none;
+  @include sm {
+    display: block;
+  }
+}
+#dropdown-menu {
+  position: absolute;
+  left: -90px;
+  @include sm {
+    left: -190px;
+  }
+}
+#icon {
+  font-size: 25px;
+  @include lg {
+    display: none;
+  }
+}
+
+/*********************************************************
+**********************************************************
+**********************************************************
+******************** Pitch starts*************************
+**********************************************************
+**********************************************************
+**********************************************************
+*/
+#pitch {
+  background-color: #01a611;
+  -webkit-clip-path: polygon(6.5% 0, 93.5% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(6.5% 0, 93.5% 0, 100% 100%, 0% 100%);
+  @include sm {
+    -webkit-clip-path: polygon(1% 0, 97% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(1% 0, 99% 0, 100% 100%, 0% 100%);
+  }
+}
+#pitch-inner {
+  background: url("Group.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  transform: rotateX(10deg);
+  -webkit-clip-path: polygon(8% 0, 92% 0, 98% 100%, 2% 100%);
+  clip-path: polygon(8% 0, 92% 0, 98% 100%, 2% 100%);
+  @include sm {
+    -webkit-clip-path: polygon(5% 0, 95% 0, 106% 100%, -6% 100%);
+    clip-path: polygon(8% 0, 92% 0, 130% 100%, -30% 100%);
+    height: 565px;
+  }
+}
+#pitchBorder {
+  background-color: white;
+  height: 601px;
+  transform: rotateX(30deg);
+  -webkit-clip-path: polygon(9.5% 0, 90.5% 0, 96% 100%, 4% 100%);
+  clip-path: polygon(9.5% 0, 90.5% 0, 96% 100%, 4% 100%);
+  @include sm {
+    -webkit-clip-path: polygon(7% 0, 93% 0, 130% 100%, -30% 100%);
+    clip-path: polygon(7% 0, 93% 0, 130% 100%, -30% 100%);
+    height: 565px;
+  }
+}
+.goalboxborder1 {
+  @include sm {
+    clip-path: polygon(8% 0, 92% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(12% 0, 88% 0, 90% 100%, 10% 100%);
+    margin: 0 auto;
+    width: 100px;
+    height: 10px;
+    background: white;
+    /* position: relative;
+        top: 18px; */
+  }
+}
+.goalbox1 {
+  width: 100px;
+  height: 40px;
+  margin: 0 auto;
+  border-top: none;
+  @include sm {
+    width: 120px;
+    background: #007b0c;
+    clip-path: polygon(8% 0, 92% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(12% 0, 72% 0, 73% 100%, 10% 100%);
+    height: 9px;
+  }
+}
+.goalboxborder2 {
+  @include sm {
+    clip-path: polygon(8% 0, 92% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(5% 0, 95% 0, 100% 100%, 0% 100%);
+    margin: 0 auto;
+    width: 240px;
+    height: 60px;
+    background: white;
+    position: relative;
+    top: 18px;
+    margin-top: 50px;
+    padding-top: 2px;
+  }
+}
+.goalbox2 {
+  width: 100px;
+  height: 50px;
+  margin: 0 auto;
+  background: url('Group-2.png');
+  background-position-y: -88px;
+  border-bottom: none;
+  @include sm {
+    width: 100%;
+    height: 59px;
+    clip-path: polygon(8% 0, 92% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(5.5% 0, 94.5% 0, 99.5% 100%, 1% 100%);
+  }
+}
+.penaltybox1border {
+  @include sm {
+    clip-path: polygon(8% 0, 92% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(26% 0, 74% 0, 77% 100%, 23% 100%);
+    background: white;
+    width: 100%;
+    height: 50px;
+    padding-bottom: 0px;
+  }
+}
+.penaltybox1 {
+  width: 230px;
+  height: 80px;
+  border-top: none;
+  clip-path: polygon(8% 0, 92% 0, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(3.5% 0, 96.5% 0, 104% 100%, -4% 100%);
+  @include sm {
+    width: 100%;
+    clip-path: polygon(8% 0, 92% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(26.5% 0, 73.5% 0, 76.5% 100%, 23.5% 100%);
+    background: url("Group-2.png");
+    height: 49px;
+    background-position-y: -29px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+
+    /* clip-path: polygon(8% 0, 92% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(26.5% 0, 73.5% 0, 92.5% 100%, 7.5% 100%);
+    background: url("Group-2.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    position: absolute; */
+  }
+}
+.penaltybox2border {
+  @include sm {
+    background: white;
+    width: 100%;
+    height: 130px;
+    padding-top: 2px;
+    clip-path: polygon(3.5% 0, 96.5% 0, 104% 100%, -4% 100%);
+    -webkit-clip-path: polygon(3.5% 0, 96.5% 0, 104% 100%, -4% 100%);
+  }
+}
+.penaltybox2 {
+  width: 250px;
+  height: 100px;
+  background: url("Group.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: none;
+  @include sm {
+    clip-path: polygon(4% 0, 96% 0, 107% 100%, -7% 100%);
+    -webkit-clip-path: polygon(4% 0, 96% 0, 107% 100%, -7% 100%);
+    width: 100%;
+    background: url("Group-2.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 185px;
+    position: absolute;
+  }
+}
+#penaltyboxarc1 {
+  margin: 0 auto;
+  width: 60px;
+  height: 30px;
+  border-radius: 30px / 15px;
+  border: 2px solid white;
+  margin-top: -20px;
+  z-index: -1;
+}
+/* width: 200px;
+	height: 100px;
+	background: red;
+	-moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px; */
+
+#penaltyboxarc2 {
+  margin: 0 auto;
+  width: 120px;
+  height: 60px;
+  border-radius: 60px / 30px;
+  z-index: -1;
+  position: relative;
+  top: 40px;
+  /* border-top-left-radius: 30px;
+    border-top-right-radius: 30px; */
+  border: 2px solid white;
+}
+#centercircle {
+  margin: 0 auto;
+  width: 90px;
+  height: 45px;
+  border-radius: 45px / 22.5px;
+  position: relative;
+  top: -20px;
+  border: 2px solid white;
+}
+#halfwayline {
+  width: 100%;
+  height: 0;
+  margin-top: 170px;
+  margin-bottom: 190px;
+  border: 2px solid white;
+  border-top: none;
+  @include sm {
+    margin-top: 150px;
+    margin-bottom: 164px;
+  }
+}
+.blackBox {
+  width: 45px;
+  height: 15px;
+}
+.besideBlackBox {
+  width: 76px;
+  height: 15px;
+}
+
+#goalPost1 {
+  background: url("soccer-net.png");
+  background-position: center;
+  background-size: cover;
+  border: 3px solid white;
+  border-bottom: none;
+  width: 50px;
+  height: 10px;
+  margin: 0 auto;
+  position: relative;
+  top: 52px;
+  @include sm {
+    top: 58px;
+  }
+}
+#goalPost2 {
+  background: url("soccer-net.png");
+  background-position: center;
+  background-size: cover;
+  border: 3px solid white;
+  border-bottom: none;
+  width: 90px;
+  height: 30px;
+  margin: 0 auto;
+  position: relative;
+  top: 17px;
+  @include sm {
+    top: 29px;
+  }
+}
+#leftAd {
+  position: relative;
+  left: 60px;
+  top: 20px;
+  @include sm {
+    left: 20px;
+  }
+}
+#leftAdBox {
+  background: white;
+  width: 100px;
+  height: 40px;
+  @include sm {
+    height: 30px;
+  }
+}
+#leftAdShadow {
+  width: 0;
+  height: 0;
+  border-top: 20px solid rgba(0, 0, 0, 0.178);
+  border-left: 7px solid transparent;
+  position: relative;
+  top: 20px;
+  @include sm {
+    top: 10px;
+  }
+}
+#rightAd {
+  position: relative;
+  right: 60px;
+  top: 20px;
+  @include sm {
+    right: 20px;
+  }
+}
+#rightAdBox {
+  background: white;
+  width: 100px;
+  height: 40px;
+  margin: 0 auto;
+  @include sm {
+    height: 30px;
+  }
+}
+
+#rightAdShadow {
+  width: 0;
+  height: 0px;
+  border-top: 20px solid rgba(0, 0, 0, 0.178);
+  border-right: 7px solid transparent;
+  position: relative;
+  top: 20px;
+  @include sm {
+    top: 10px;
+  }
+}
+
+/*********************************************************
+**********************************************************
+**********************************************************
+******************** Pitch ends*************************
+**********************************************************
+**********************************************************
+**********************************************************
+*/
+#desktopFixtures {
+  @include sm {
+    display: none;
+  }
+}
+#desktopTable {
+  @include sm {
+    display: none;
+  }
+}
+ul.goalie {
+  @include sm {
+    position: absolute;
+    left: 118px;
+    top: 450px;
+    z-index: 1;
+    list-style: none;
+  }
+}
+#player-body {
+  height: 50px;
+  width: 40px;
+  
+
+  img {
+      width: 90px;
+      height: 80px;
+      z-index: 1;
+      position: relative;
+      right: 22px;
+      top: -20px;
+  }
+}
+#player-name, #player-value {
+    max-width: 60px;
+    display: none;
+}
+/* .Def {
+  position: absolute;
+  top: 320px;
+} */
+/* .Mid {
+  position: absolute;
+  top: 160px;
+} */
+/* .FW {
+  position: absolute;
+  top: 10px;
+} */
+/******************* 5-4-1 formation ****************/
+
+/* #Def5-5-4-1 {
+  left: 293px;
+}
+#Def4-5-4-1 {
+  left: 220px;
+}
+#Def3-5-4-1 {
+  left: 150px;
+}
+#Def2-5-4-1 {
+  left: 78px;
+}
+#Def1-5-4-1 {
+  left: 7px;
+} */
+
+ul.Def-5-4-1 {
+    list-style: none;
+    position: absolute;
+    z-index: 1;
+    display: table;
+    margin: 0 auto 43px;
+    top: 300px;
+    left: -45px;
+
+    li {
+        display: table-cell;
+        padding: 0 15px;
+        vertical-align: center;
+        text-align: center;
+    }
+}
+ul.Mid-5-4-1 {
+    list-style: none;
+    position: absolute;
+    z-index: 1;
+    display: table;
+    margin: 0 auto 43px;
+    top: 140px;
+    left: -50px;
+
+    li {
+        display: table-cell;
+        padding: 0 25px;
+        vertical-align: center;
+        text-align: center;
+    }
+}
+ul.FW-5-4-1 {
+    list-style: none;
+    position: absolute;
+    z-index: 1;
+    display: table;
+    margin: 0 auto 43px;
+    top: 10px;
+    left: 93px;
+
+    li {
+        display: table-cell;
+        padding: 0 25px;
+        vertical-align: center;
+        text-align: center;
+        z-index: 1;
+    }
+}
+/* #5-4-2-Mid5 { 
+    left: 295px;
+} */
+/* #Mid4-5-4-1 {
+  left: 285px;
+}
+#Mid3-5-4-1 {
+  left: 196px;
+}
+#Mid2-5-4-1 {
+  left: 111px;
+}
+#Mid1-5-4-1 {
+  left: 25px;
+} */
+/* #FW1-5-4-1 {
+  left: 157px;
+} */
+
+/************* 5-3-2 formation **********/
+
+#FW2-5-3-2 {
+  left: 230px;
+}
+#FW1-5-3-2 {
+  left: 86px;
+}
+#Mid3-5-3-2 {
+  left: 270px;
+}
+#Mid2-5-3-2 {
+  left: 157px;
+}
+#Mid1-5-3-2 {
+  left: 40px;
+}
+#Def5-5-3-2 {
+  left: 307px;
+}
+#Def4-5-3-2 {
+  left: 232px;
+}
+#Def3-5-3-2 {
+  left: 157px;
+}
+#Def2-5-3-2 {
+  left: 82px;
+}
+#Def1-5-3-2 {
+  left: 7px;
+}
+
+/************* 5-2-3 formation **********/
+#FW3-5-2-3 {
+  left: 260px;
+}
+#FW2-5-2-3 {
+  left: 157px;
+}
+#FW1-5-2-3 {
+  left: 60px;
+}
+#Mid2-5-2-3 {
+  left: 220px;
+}
+#Mid1-5-2-3 {
+  left: 90px;
+}
+#Def5-5-2-3 {
+  left: 307px;
+}
+#Def4-5-2-3 {
+  left: 232px;
+}
+#Def3-5-2-3 {
+  left: 157px;
+}
+#Def2-5-2-3 {
+  left: 82px;
+}
+#Def1-5-2-3 {
+  left: 7px;
+}
+
+/************* 4-4-2 formation **********/
+#FW2-4-4-2 {
+  left: 230px;
+}
+#FW1-4-4-2 {
+  left: 86px;
+}
+#Mid4-4-4-2 {
+  left: 290px;
+}
+#Mid3-4-4-2 {
+  left: 205px;
+}
+#Mid2-4-4-2 {
+  left: 115px;
+}
+#Mid1-4-4-2 {
+  left: 30px;
+}
+#Def4-4-4-2 {
+  left: 290px;
+}
+#Def3-4-4-2 {
+  left: 205px;
+}
+#Def2-4-4-2 {
+  left: 115px;
+}
+#Def1-4-4-2 {
+  left: 30px;
+}
+
+/************* 4-3-3 formation **********/
+#FW3-4-3-3 {
+  left: 260px;
+}
+#FW2-4-3-3 {
+  left: 157px;
+}
+#FW1-4-3-3 {
+  left: 60px;
+}
+#Mid3-4-3-3 {
+  left: 260px;
+}
+#Mid2-4-3-3 {
+  left: 157px;
+}
+#Mid1-4-3-3 {
+  left: 60px;
+}
+#Def4-4-3-3 {
+  left: 290px;
+}
+#Def3-4-3-3 {
+  left: 205px;
+}
+#Def2-4-3-3 {
+  left: 115px;
+}
+#Def1-4-3-3 {
+  left: 30px;
+}
+
+/************* 3-4-3 formation **********/
+#FW3-3-4-3 {
+  left: 260px;
+}
+#FW2-3-4-3 {
+  left: 157px;
+}
+#FW1-3-4-3 {
+  left: 60px;
+}
+#Mid4-3-4-3 {
+  left: 290px;
+}
+#Mid3-3-4-3 {
+  left: 205px;
+}
+#Mid2-3-4-3 {
+  left: 115px;
+}
+#Mid1-3-4-3 {
+  left: 30px;
+}
+#Def3-3-4-3 {
+  left: 260px;
+}
+#Def2-3-4-3 {
+  left: 157px;
+}
+#Def1-3-4-3 {
+  left: 60px;
+}
+
+/************* 3-5-2 formation **********/
+#FW2-3-5-2 {
+  left: 230px;
+}
+#FW1-3-5-2 {
+  left: 86px;
+}
+#Mid5-3-5-2 {
+  left: 307px;
+}
+#Mid4-3-5-2 {
+  left: 232px;
+}
+#Mid3-3-5-2 {
+  left: 157px;
+}
+#Mid2-3-5-2 {
+  left: 82px;
+}
+#Mid1-3-5-2 {
+  left: 7px;
+}
+#Def3-3-5-2 {
+  left: 260px;
+}
+#Def2-3-5-2 {
+  left: 157px;
+}
+#Def1-3-5-2 {
+  left: 60px;
+}
+
+/************* 4-5-1 formation **********/
+#FW1-4-5-1 {
+  left: 160px;
+}
+#Mid5-4-5-1 {
+  left: 307px;
+}
+#Mid4-4-5-1 {
+  left: 232px;
+}
+#Mid3-4-5-1 {
+  left: 157px;
+}
+#Mid2-4-5-1 {
+  left: 82px;
+}
+#Mid1-4-5-1 {
+  left: 7px;
+}
+#Def4-4-5-1 {
+  left: 290px;
+}
+#Def3-4-5-1 {
+  left: 205px;
+}
+#Def2-4-5-1 {
+  left: 115px;
+}
+#Def1-4-5-1 {
+  left: 30px;
+}
+
+#desktopPitch {
+  @include sm {
+    display: none;
+  }
+}
+#mobilePitch {
+  display: none;
+  @include sm {
+    display: block;
+  }
+}
+#addSquadBtn {
+  width: 330px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+#desktopLeagueInfo {
+  @include sm {
+    display: none;
+  }
+}
+#mobileLeagueInfo {
+  display: none;
+  @include sm {
+    display: block;
+  }
+}
+
+/* old version pitch player positioning */
+ul.gk {
+  list-style: none;
+  display: table;
+  margin: 0 auto 43px;
+  width: auto;
+  min-height: 96px;
+  position: absolute;
+  left: 100px;
+  z-index: 1;
+  li {
+    display: table-cell;
+    padding: 0 5px;
+    vertical-align: top;
+    text-align: center;
+
+    .jersy {
+      height: 56px;
+      display: block;
+      position: relative;
+
+      > img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 12px auto 0;
+        max-width: 100%;
+      }
+
+      .player-pos {
+        position: absolute;
+        top: 0;
+        left: 3px;
+        font-size: 12px;
+        color: #ffdd69;
+      }
+    }
+
+    .block {
+      background: rgba(0, 0, 0, 0.15);
+      width: 100px;
+      max-width: 64px;
+
+      .name-position {
+        font-size: 14px;
+        color: #fff;
+        min-height: 20px;
+        padding: 2px;
+        line-height: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+        display: block;
+        font-weight: 500;
+      }
+
+      .value {
+        display: block;
+        background: rgba(0, 0, 0, 0.05);
+        font-size: 14px;
+        color: #fff;
+        min-height: 20px;
+        padding: 2px;
+        line-height: 16px;
+        overflow: hidden;
+        width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+ul li .block .jersy .player-remove:after {
+  width: 15px;
+  height: 14px;
+  background: #f0481a;
+  color: #fff;
+  display: block;
+  content: "\2212";
+  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.player-remove {
+  width: 20px;
+  height: 20px;
+}
+
+.player-undo {
+  width: 10px;
+  height: 10px;
+  background-color: green;
+}

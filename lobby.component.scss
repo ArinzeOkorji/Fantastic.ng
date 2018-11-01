@@ -1,0 +1,504 @@
+/* > .container,
+  > .container-fluid {
+    > div:first-child {
+      display: inline;
+    }
+    align-items: center;
+  }
+} */
+
+/////HEADER starts
+
+
+// Media query size for most of the Smartphones Mobiles (Portrait)
+@mixin for-portrait-phone-only {
+    @media (min-width: 320px) and (max-width: 480px) {
+        @content;
+    }
+}
+
+// Media query size for low Resolution Tablets, Mobiles (Landscape)
+@mixin for-landscape-phone-only {
+    @media (min-width: 481px) and (max-width: 767px) {
+        @content;
+    }
+}
+
+//Media query for Tablets, Ipads (portraits)
+@mixin for-portrait-tablet-and-ipad-only {
+    @media (min-width: 768px) and (max-width: 1024px) {
+        @content;
+    }
+}
+
+//Media query for Tablets, Ipads (landscape)
+@mixin for-landscape-tablet-and-ipads-only {
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+        @content;
+    }
+}
+
+
+
+//Media query Laptops, Desktops
+@mixin for-laptop-and-desktop-only {
+    @media (min-width: 1025px) {
+        @content;
+    }
+}
+
+
+
+//Desktop navbar starts
+//mdb navbar-brand starts
+
+
+
+#navbar-logo {
+    @include for-portrait-phone-only{
+        float:right;
+    position: absolute;
+    right:100px;
+    align-self: center;
+    }
+    @include for-landscape-phone-only{
+        float:right;
+    position: absolute;
+    right:200px;
+    align-self: center;
+    }
+    @include for-portrait-tablet-and-ipad-only{
+        float:right;
+    position: absolute;
+    right:200px;
+    align-self: center;
+    }
+    @include for-landscape-tablet-and-ipads-only {
+        float: none;
+        right: 0px;
+        position: relative;
+    align-self: center;
+    margin-left: -35px;
+margin-right: 20px;
+    }
+    @include for-laptop-and-desktop-only {
+        margin-left: -95px;
+    margin-right: 20px;
+    }
+}
+
+
+
+
+//desktop navbar logo starts
+#logo_Desktop {
+    @include for-portrait-phone-only {
+        display: block;
+        margin-left: -150px;
+    }
+    @include for-landscape-phone-only {
+        display: block;
+        margin-left: -230px;
+    }
+    @include for-portrait-tablet-and-ipad-only {
+        margin-left: -265px;
+    }
+    @include for-landscape-tablet-and-ipads-only {
+        margin-left: 0px;
+    }
+    width: 133px;
+    height: 20px;
+    @include for-laptop-and-desktop-only {
+        width: 200px;
+        height: 30px;
+    }
+
+}
+
+//Logo on mobile starts
+#logo_Mobile {
+    display: none;
+    @include for-portrait-phone-only {
+        max-width: 30px;
+        max-height: 60px;
+        margin-left: -115px;
+        display: block;
+    }
+    @include for-landscape-phone-only {
+        max-width: 30px;
+        max-height: 60px;
+        margin-left: -215px;
+        display: block;
+    }
+
+}
+//animation for navbar links starts
+#nav-link {
+  color: #333;
+  font-size: 13px;
+  font-weight: normal;
+    border-bottom: 4px solid transparent;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    @include for-landscape-tablet-and-ipads-only {
+      position: relative;
+      top: 10px;
+      height: 45px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    @include for-laptop-and-desktop-only {
+      position: relative;
+      top: 10px;
+      height: 45px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+}
+#nav-link:hover {
+  @include for-landscape-tablet-and-ipads-only {
+    animation: navLink 0.3s ease forwards;
+}
+  @include for-laptop-and-desktop-only {
+    animation: navLink 0.3s ease forwards;
+}
+}
+
+@keyframes navLink {
+    to {
+        border-bottom: 4px solid #419BF9;
+    }
+}
+
+//animation for navbar links ends
+
+
+
+//USER MENU STARTS
+
+
+//Mobile navbar
+#Mobiledropdown1 {
+    display: none;
+    @include for-portrait-phone-only {
+        display: block;
+        margin-right: -85px;
+    }
+    @include for-landscape-phone-only {
+        display: block;
+        margin-right: -185px;
+    }
+    @include for-portrait-tablet-and-ipad-only {
+        display: block;
+        margin-right: -185px;
+        position: relative;
+        bottom: 5px;
+    }
+    @include for-landscape-tablet-and-ipads-only {
+        display: none;
+    }
+}
+
+//right user icon on desktop starts
+#dropdown {
+    @include for-portrait-phone-only {
+        display: none;
+    }
+    @include for-landscape-phone-only {
+        display: none;
+    }
+    @include for-portrait-tablet-and-ipad-only {
+        display: none;
+    }
+    @include for-landscape-tablet-and-ipads-only {
+        display: block;
+        margin-right: -30px;
+    }
+    @include for-laptop-and-desktop-only {
+        margin-right: -100px;
+    }
+}
+
+
+
+
+
+//pointer cursor for DesktopNavbar starts
+#dropdownBtn:hover {
+    cursor: pointer;
+}
+
+//USer info for user dropdown button
+.user-info {
+    @include for-portrait-phone-only {
+        display: none;
+    }
+    @include for-landscape-phone-only {
+        display: none;
+    }
+
+ }
+
+
+// User icon in top right of desktop headers starts
+#user-icon {
+    font-size: 20px;
+    padding: 9px 10px;
+    @include for-portrait-phone-only {
+    font-size: 20px;
+    padding: 4px 8px;
+    }
+    @include for-landscape-phone-only {
+    font-size: 20px;
+    padding: 8px 8px;
+    }
+    @include for-portrait-tablet-and-ipad-only {
+    font-size: 20px;
+    padding: 9px 10px;
+    }
+}
+
+
+// border around user icon starts
+#user-icon-border {
+    border: solid 1px rgb(218, 218, 218);
+    border-radius: 50%;
+    @include for-portrait-phone-only {
+        padding: 7px 4px;
+        position: relative;
+        bottom: 5px;
+    }
+}
+
+
+// border around user icon when hovering starts
+#user-icon-border:hover {
+    border: solid 1px rgb(107, 195, 253);
+}
+
+
+// Dropdown menu starts
+// Desktop navbar user dropdown menu on the right side of navbar starts
+#dropdown-menu {
+    position: absolute;
+    left: -110px;
+    @include for-portrait-phone-only {
+      left: -190px;
+    }
+    @include for-landscape-phone-only {
+      left: -190px;
+    }
+    .btn-in-user-dropdown {
+      width: 100px;
+    }
+}
+
+//  Links in user dropdown starts
+#dropdown #dropdownlink:hover {
+    background: #4caf50;
+    color: white;
+    transition: 0.3s;
+}
+
+//USER MENU ENDS
+
+
+/////======HEADER ENDS=======/////
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////======BODY STARTS=======/////
+
+@mixin for-portrait-phone-only {
+    @media (min-width: 320px) and (max-width: 480px) {
+        @content;
+    }
+}
+
+// Media query size for low Resolution Tablets, Mobiles (Landscape)
+@mixin for-landscape-phone-only {
+    @media (min-width: 481px) and (max-width: 767px) {
+        @content;
+    }
+}
+
+//Media query for Tablets, Ipads (portraits)
+@mixin for-portrait-tablet-and-ipad-only {
+    @media (min-width: 768px) and (max-width: 1024px) {
+        @content;
+    }
+}
+
+//Media query for Tablets, Ipads (landscape)
+@mixin for-landscape-tablet-and-ipads-only {
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+        @content;
+    }
+}
+
+
+
+//Media query Laptops, Desktops
+@mixin for-laptop-and-desktop-only {
+    @media (min-width: 1025px) {
+        @content;
+    }
+}
+
+//card text height and width
+#card-text {
+    max-width: 400px;
+    min-height: 245px;
+    @include for-landscape-phone-only {
+        min-height: 220px;
+    }
+    @include for-portrait-tablet-and-ipad-only {
+        min-height: 180px;
+    }
+}
+
+//card league images starts
+#league-image {
+    max-width: 349.33px;
+    height: 150px;
+    padding: 5px 10px 15px;
+    @include for-landscape-phone-only {
+        padding-bottom: 7.5px;
+        height: 120px;
+    }
+}
+
+//container that holds the card button starts
+.text-info {
+    padding: 0px 20px 15px;
+    @include for-landscape-phone-only {
+        padding: 0px 0px 15px;
+    }
+    @include for-portrait-tablet-and-ipad-only {
+        padding: 0px 0px 15px;
+    }
+    @include for-landscape-tablet-and-ipads-only {
+        padding: 0px 0px 15px;
+    }
+}
+
+//container for sponsor thumbnail starts
+#sponsor-box {
+    max-width: 349.33px;
+    max-height: 19px;
+    margin-top: 0;
+}
+
+//premier league image starts
+#premLeague {
+    width: 180px;
+    height: 90px;
+    @include for-landscape-phone-only {
+        width: 140px;
+        height: 70px;
+    }
+    @include for-portrait-tablet-and-ipad-only {
+        width: 140px;
+        height: 70px;
+    }
+}
+
+    //la liga image starts
+    #laliga {
+    width: 190px;
+    height: 71px;
+    @include for-landscape-phone-only {
+        width: 150px;
+        height: 61px;
+    }
+    @include for-portrait-tablet-and-ipad-only {
+        width: 150px;
+        height: 61px;
+    }
+}
+
+//bundes liga image starts
+#bundesLiga {
+    width: 160px;
+    height: 62px;
+    @include for-landscape-phone-only {
+        width: 120px;
+        height: 51px;
+    }
+    @include for-portrait-tablet-and-ipad-only {
+        width: 120px;
+        height: 51px;
+    }
+}
+
+//ligue 1 image starts
+#ligue1 {
+    width: 60px;
+    height: 100px;
+    @include for-landscape-phone-only {
+        width: 50px;
+        height: 80px;
+    }
+    @include for-portrait-tablet-and-ipad-only {
+        width: 50px;
+        height: 80px;
+    }
+}
+
+//SerieA image starts
+#serieA {
+    width: 190px;
+    height: 150px;
+    @include for-landscape-phone-only {
+        width: 150px;
+        height: 110px;
+    }
+    @include for-portrait-tablet-and-ipad-only {
+        width: 150px;
+        height: 110px;
+    }
+}
+
+/////======BODY ENDS=======/////
+
+
+
+
+
+
+
+/////======FOOTER STARTS=======/////
+//Social media icons at footer starts
+#social-media-icons  {
+    a {
+         svg {
+            fill: grey;
+        }
+        svg:first-child {
+            width: 30px;
+            height: 40px;
+        }
+        svg:nth-child(2) {
+            width: 20px;
+            height: 17px;
+        }
+        svg:nth-child(3) {
+            width: 19px;
+            height: 19px;
+        }
+
+    }
+}
+/////======FOOTER STARTS=======/////

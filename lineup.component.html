@@ -1,0 +1,2153 @@
+<nav>
+  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-light py-3" [containerInside]='false'>
+
+    <mdb-navbar-brand>
+      <a href="#" class="navbar-brand">
+        <img src="assets/images/logo-main-inner.png" alt="">
+      </a>
+    </mdb-navbar-brand>
+
+
+    <links>
+
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="#" class="nav-link">LOBBY</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">MY CONTEST</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">LEADERBOARD</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">EARN COINS</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">HOW TO PLAY</a>
+        </li>
+      </ul>
+      <div class=" ml-auto d-flex">
+        <i class="fas fa-bell align-self-center mr-5" id="icon" mdbTooltip="My Notifications" placement="bottom"></i>
+        <i class="fas fa-users align-self-center mr-5" id="icon" mdbTooltip="Refer Friends" placement="bottom"></i>
+
+        <div class="dropdown  align-self-center mr-4" dropdown>
+          <div class="d-flex" dropdownToggle>
+            <div>
+              <div class="d-block">
+                <span class="font-weight-bold">Arinze Okorji</span>
+              </div>
+              <div>
+                <span>
+                  <i class="fas fa-coins pr-3"></i>60/
+                </span>
+                <span class="green-text">N200</span>
+              </div>
+            </div>
+            <div class="align-self-center ml-2 justify-content-center" id="user-icon-border">
+              <i class="fas fa-user " id="user-icon"></i>
+            </div>
+          </div>
+
+          <div class="dropdown dropdown-menu dropdown-primary" id="dropdown-menu" *dropdownMenu>
+            <section class="dropdown-menu-top grey lighten-4">
+              <div class="d-flex">
+                <div class="pr-3 mr-2 ml-3">
+                  <span class="d-block small">Balance</span>
+                  <span class="green-text">N200</span>
+                </div>
+                <button class="green mb-4 ml-5 mr-3 mt-2 py-0" size="sm" mdbBtn>ADD FUNDS</button>
+              </div>
+
+              <div class="d-flex mt-3">
+                <div class="pr-1 mr-2 ml-3">
+                  <span class="d-block small">Buy Coins</span>
+
+                  <i class="fas fa-coins mr-2"></i>
+                  <span class="font-weight-bold green-text">53</span>
+                </div>
+
+                <button class="green mb-4 ml-5 mr-3 mt-2 p-2" size="sm" mdbBtn>COIN DETAILS</button>
+              </div>
+
+            </section>
+            <div class="divider dropdown-divider"></div>
+            <section class="dropdown-menu-bottom">
+              <ul class="list-group list-group-flush ">
+                <li class="list-group-item">My Account</li>
+                <li class="list-group-item">Profile</li>
+                <li class="list-group-item d-flex justify-content-between">Notification
+                  <span class="badge badge-success badge-pill align-self-center">1</span>
+                </li>
+                <li class="list-group-item">Logout</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </links>
+
+
+
+
+  </mdb-navbar>
+</nav>
+
+<nav id="mobileDropdown">
+  <div class="navbar navbar-expand-lg navbar-light py-2 d-flex" id="mobileNavbar">
+
+
+
+
+    <div dropdown class="dropdown">
+      <button type="button" class="navbar-toggler" dropdownToggle>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="dropdown dropdown-menu" id="navMenu" *dropdownMenu>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="" class="nav-link ml-3">HOME</a>
+          </li>
+          <div class="dropdown-divider"></div>
+          <li class="nav-item">
+            <a href="" class="nav-link ml-3">LOBBY</a>
+          </li>
+          <div class="dropdown-divider"></div>
+          <li class="nav-item">
+            <a href="" class="nav-link ml-3">LEADERBOARD</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <a class="navbar-brand mx-auto " href="">
+      <img src="assets/images/logo/logo.png" class="ml-4" alt="logo" id="logo">
+    </a>
+
+    <div class="dropdown  ml-auto align-self-center" id="dropdown" dropdown>
+      <div class="d-flex" dropdownToggle>
+        <div id="user-info">
+          <div class="d-block">
+            <span class="font-weight-bold">Arinze Okorji</span>
+          </div>
+          <div>
+            <span>
+              <i class="fas fa-coins pr-3"></i>60/
+            </span>
+            <span class="green-text">N200</span>
+          </div>
+        </div>
+        <div class="align-self-center ml-2 justify-content-center" id="user-icon-border">
+          <i class="fas fa-user px-2" id="user-icon"></i>
+        </div>
+      </div>
+
+      <div class="dropdown dropdown-menu dropdown-primary" id="dropdown-menu" *dropdownMenu>
+        <section class="dropdown-menu-top grey lighten-4">
+          <div class="d-flex">
+            <div class="pr-3 mr-2 ml-3">
+              <span class="d-block small">Balance</span>
+              <span class="green-text">N200</span>
+            </div>
+            <button class="green mb-4 ml-5 mr-3 mt-2 py-0" size="sm" mdbBtn>ADD FUNDS</button>
+          </div>
+
+          <div class="d-flex mt-3">
+            <div class="pr-1 mr-2 ml-3">
+              <span class="d-block small">Buy Coins</span>
+
+              <i class="fas fa-coins mr-2"></i>
+              <span class="font-weight-bold green-text">53</span>
+            </div>
+
+            <button class="green mb-4 ml-5 mr-3 mt-2 p-2" size="sm" mdbBtn>COIN DETAILS</button>
+          </div>
+
+        </section>
+        <div class="divider dropdown-divider"></div>
+        <section class="dropdown-menu-bottom">
+          <div class="list-group list-group-flush ">
+            <a class="list-group-item" id="#dropdownlink">My Account</a>
+            <a class="list-group-item" id="#dropdownlink">Profile</a>
+            <a class="list-group-item d-flex justify-content-between" id="dropdownlink">Notification
+              <span class="badge badge-success badge-pill align-self-center">1</span>
+            </a>
+            <a class="list-group-item" id="dropdownlink">Logout</a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<div class="black">
+  <!-- desktop league info starts -->
+  <div class="container" id="desktopLeagueInfo">
+    <div class="d-flex py-2">
+      <div class="d-flex">
+        <h4 class="red-text px-2 align-self-center rounded-circle font-weight-bold white">F</h4>
+        <div class=" ml-3">
+          <h4 class="white-text mb-0">SATURDAY SPECIAL</h4>
+          <span class="blue-text small mt-0">Contest List</span>
+        </div>
+      </div>
+      <div class="ml-auto align-items-center">
+        <span class="d-block grey-text ml-5 pl-4 ">Starts At</span>
+        <span class="white-text small">Sat, Sept 15 &nbsp; 03:00 pm</span>
+      </div>
+    </div>
+  </div>
+  <!-- desktop league info ends -->
+
+  <!-- mobile league info starts -->
+  <div class="container" id="mobileLeagueInfo">
+    <div class="d-flex py-2">
+
+      <h6 class="white-text mb-0 ml-2 align-self-center">SATURDAY SPECIAL</h6>
+
+      <div class="ml-auto align-items-center">
+        <span class="white-text small">Sat, Sept 15 &nbsp; 03:00 pm</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="desktopFixtures">
+    <div class="border d-flex py-0">
+      <div class="col white-text text-center align-self-center">FIXTURES</div>
+      <div class="col white-text text-center border pt-2 border-top-0 border-bottom-0">
+        <span class="d-block font-weight-bold">LEI Vs LIV</span>
+        <span class="small">Sat, Sep 01-12:30 pm</span>
+      </div>
+      <div class="col white-text text-center pt-2 border-0">
+        <span class="d-block font-weight-bold">BRI Vs FUL</span>
+        <span class="small">Sat, Sep 01-03:00 pm</span>
+      </div>
+      <div class="col white-text text-center pt-2 border border-top-0 border-bottom-0">
+        <span class="d-block font-weight-bold">EVE Vs HUD</span>
+        <span class="small">Sat, Sep 01-03:00 pm</span>
+      </div>
+      <div class="col white-text text-center pt-2 border border-0">
+        <span class="d-block font-weight-bold">CRY Vs SOT</span>
+        <span class="small">Sat, Sep 01-03:00 pm</span>
+      </div>
+      <div class="col white-text text-center pt-2 border border-top-0 border-bottom-0">
+        <span class="d-block font-weight-bold">WHU Vs WOL</span>
+        <span class="small">Sat, Sep 01-03:00 pm</span>
+      </div>
+
+      <div class="btn-group-vertical rounded-right ml-auto">
+
+        <button class="border-bottom d-block ml-0 bg-white my-0 rounded-0 waves-light relative black" mdbBtn size='sm'
+          mdbWavesEffect>
+          <i class="fas fa-chevron-right white-text"></i>
+        </button>
+
+
+        <button class=" d-block bg-white my-0 rounded-0 waves-light relative black" mdbBtn size='sm' mdbWavesEffect>
+          <i class="fas fa-chevron-left white-text"></i>
+        </button>
+
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<!-- Red section starts -->
+<div class="red">
+  <div class="container">
+    <div class="row">
+
+
+
+      <!-- white left column starts -->
+      <div class="col-sm-6 mt-3" id="desktopTable">
+
+        <!-- Above table starts -->
+        <div class="d-flex grey align-items-center lighten-4 pl-2">
+          <div class="small d-flex py-1">
+            <a class="px-2">
+              <span class="d-block text-center">All</span>
+              <span>
+                <span class="font-weight-bold">0</span> / 11</span>
+            </a>
+            <a class="px-2">
+              <span class="d-block text-center">GK</span>
+              <span>
+                <span class="font-weight-bold">0</span> / 1-1</span>
+            </a>
+            <a class="px-2">
+              <span class="d-block text-center">DF</span>
+              <span>
+                <span class="font-weight-bold">0</span> / 3-5</span>
+            </a>
+            <a class="px-2">
+              <span class="d-block text-center">MF</span>
+              <span>
+                <span class="font-weight-bold">0</span> / 3-5</span>
+            </a>
+            <a class="px-2">
+              <span class="d-block text-center">FW</span>
+              <span>
+                <span class="font-weight-bold">0</span> / 1-3</span>
+            </a>
+          </div>
+          <div mdbDropdown class="ml-auto mr-4 mt-2 btn-group">
+            <a class="dropdown-toggle font-weight-bold" mdbDropdownToggle>All Teams</a>
+
+            <div class="dropdown-menu">
+              <a class="dropdown-item">Arsenal</a>
+              <a class="dropdown-item">Man u</a>
+              <a class="dropdown-item">MCI</a>
+              <a class="dropdown-item">Leicester City</a>
+              <a class="dropdown-item">Newcastle</a>
+              <a class="dropdown-item">Chelsea</a>
+            </div>
+          </div>
+        </div>
+        <!-- above table ends -->
+
+        <!-- table starts -->
+        <table class="table white mt-0">
+          <tr>
+            <th></th>
+            <th class="grey-text lighten-4">Player</th>
+            <th class="grey-text lighten-4">Team</th>
+            <th class="grey-text lighten-4">Salary</th>
+            <th class="grey-text lighten-4">Form</th>
+            <th></th>
+          </tr>
+          <tr class="align-items-center">
+            <td class="pt-4">GK</td>
+            <td class="pt-4 font-weight-bold">N. Etheridge</td>
+            <td class="pt-4">
+              <span class="font-weight-bold">CAR</span> vs CHE</td>
+            <td class="pt-4">6.50</td>
+            <td class="pt-4">13</td>
+            <td>
+              <button class="waves-light relative mt-0" color='primary' size='sm' mdbBtn mdbWavesEffect>
+                <i class="fas fa-plus"></i>
+              </button>
+            </td>
+          </tr>
+          <tr class="align-items-center">
+            <td class="pt-4">FW</td>
+            <td class="pt-4 font-weight-bold">A. Mitrovic</td>
+            <td class="pt-4">
+              <span class="font-weight-bold">FUL</span> vs MCI</td>
+            <td class="pt-4">8</td>
+            <td class="pt-4">11</td>
+            <td>
+              <button class="waves-light relative mt-0" color='primary' size='sm' mdbBtn mdbWavesEffect>
+                <i class="fas fa-plus"></i>
+              </button>
+            </td>
+          </tr>
+          <tr class="align-items-center">
+            <td class="pt-4">GK</td>
+            <td class="pt-4 font-weight-bold">N. Etheridge</td>
+            <td class="pt-4">
+              <span class="font-weight-bold">CAR</span> vs CHE</td>
+            <td class="pt-4">6.50</td>
+            <td class="pt-4">13</td>
+            <td>
+              <button class="waves-light relative mt-0" color='primary' size='sm' mdbBtn mdbWavesEffect>
+                <i class="fas fa-plus"></i>
+              </button>
+            </td>
+          </tr>
+          <tr class="align-items-center">
+            <td class="pt-4">FW</td>
+            <td class="pt-4 font-weight-bold">A. Mitrovic</td>
+            <td class="pt-4">
+              <span class="font-weight-bold">FUL</span> vs MCI</td>
+            <td class="pt-4">8</td>
+            <td class="pt-4">11</td>
+            <td>
+              <button class="waves-light relative mt-0" color='primary' size='sm' mdbBtn mdbWavesEffect>
+                <i class="fas fa-plus"></i>
+              </button>
+            </td>
+          </tr>
+          <tr class="align-items-center">
+            <td class="pt-4">GK</td>
+            <td class="pt-4 font-weight-bold">N. Etheridge</td>
+            <td class="pt-4">
+              <span class="font-weight-bold">CAR</span> vs CHE</td>
+            <td class="pt-4">6.50</td>
+            <td class="pt-4">13</td>
+            <td>
+              <button class="waves-light relative mt-0" color='primary' size='sm' mdbBtn mdbWavesEffect>
+                <i class="fas fa-plus"></i>
+              </button>
+            </td>
+          </tr>
+          <tr class="align-items-center">
+            <td class="pt-4">FW</td>
+            <td class="pt-4 font-weight-bold">A. Mitrovic</td>
+            <td class="pt-4">
+              <span class="font-weight-bold">FUL</span> vs MCI</td>
+            <td class="pt-4">8</td>
+            <td class="pt-4">11</td>
+            <td>
+              <button class="waves-light relative mt-0" color='primary' size='sm' mdbBtn mdbWavesEffect>
+                <i class="fas fa-plus"></i>
+              </button>
+            </td>
+          </tr>
+          <tr class="align-items-center">
+            <td class="pt-4">GK</td>
+            <td class="pt-4 font-weight-bold">N. Etheridge</td>
+            <td class="pt-4">
+              <span class="font-weight-bold">CAR</span> vs CHE</td>
+            <td class="pt-4">6.50</td>
+            <td class="pt-4">13</td>
+            <td>
+              <button class="waves-light relative mt-0" color='primary' size='sm' mdbBtn mdbWavesEffect>
+                <i class="fas fa-plus"></i>
+              </button>
+            </td>
+          </tr>
+          <tr class="align-items-center">
+            <td class="pt-4">FW</td>
+            <td class="pt-4 font-weight-bold">A. Mitrovic</td>
+            <td class="pt-4">
+              <span class="font-weight-bold">FUL</span> vs MCI</td>
+            <td class="pt-4">8</td>
+            <td class="pt-4">11</td>
+            <td>
+              <button class="waves-light relative mt-0" color='primary' size='sm' mdbBtn mdbWavesEffect>
+                <i class="fas fa-plus"></i>
+              </button>
+            </td>
+          </tr>
+        </table>
+        <!-- table ends -->
+      </div>
+
+      <!-- white left column ends -->
+
+      <!-- green right column starts -->
+
+      <div class="col-sm-12 mt-3 col-md-6" id="desktopPitch">
+
+        <!-- green section top starts -->
+        <div class="green darken-2">
+          <div>
+            <div class="white-text d-flex">
+              <div class="flex-fill d-flex px-2 py-1 align-items-center">
+                <h4 class=" font-weight-bold mr-auto">0</h4>
+                <span class="small">
+                  <span class="d-block">Avg. credit</span> per player
+                </span>
+              </div>
+              <div class="flex-fill border-left d-flex px-2 py-1 align-items-center">
+
+                <h4 class="font-weight-bold">100</h4>
+                <span class="small ml-auto pb-2">
+                  <span class="">Salary</span> left</span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- green section top ends -->
+
+
+        <!-- white section bottom starts -->
+
+        <div class="white">
+          <div class="d-flex mx-3 pt-2">
+            <button class="waves-light relative px-3 black-text" color='yellow' size='sm' mdbBtn mdbWavesEffect> Clear</button>
+            <button class="waves-light relative ml-auto px-3 black-text" color='yellow' size='sm' mdbBtn mdbWavesEffect>
+              Auto Pick</button>
+            <button class="waves-light relative px-3 black-text" color='yellow' size='sm' mdbBtn mdbWavesEffect> Create
+              Team</button>
+          </div>
+          <div class="small pl-3 py-3">
+            >> Select Captain and Vice captain
+          </div>
+
+
+          <div class="">
+            <!-- pitch starts: 5-4-3 -->
+            <div id="pitch" class="">
+              <div class="d-flex">
+                <div class="d-flex" id="leftAd">
+                  <div id="leftAdShadow"></div>
+                  <div id="leftAdBox"></div>
+                </div>
+
+                <div id="goalPost1"></div>
+
+                <div class="d-flex" id='rightAd'>
+                  <div id="rightAdBox"></div>
+                  <div id="rightAdShadow"></div>
+                </div>
+              </div>
+              <div id="pitchBorder">
+
+                <div class="" id="pitch-inner">
+
+                  <div class="corner-arc-top-left "></div>
+                  <div class="corner-arc-top-right "></div>
+                  <div class="corner-arc-bottom-left "></div>
+                  <div class="corner-arc-bottom-right "></div>
+                  <div class="penaltybox1">
+                    <div class="goalbox1"></div>
+                  </div>
+                  <div class="" id="penaltyboxarc1"></div>
+
+                  <a id="Def">
+                    <div id="player-body"></div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color">Value</span>
+                    </div>
+                  </a>
+
+                  <div class="" id="halfwayline">
+                    <div id="centercircle" class=" rounded-circle"></div>
+                  </div>
+
+                  <div class="" id="penaltyboxarc2"></div>
+                  <div class="penaltybox2">
+                    <div class="goalbox2">
+                      <div id="goalPost2"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- pitch ends -->
+          </div>
+
+
+
+        </div>
+
+
+        <!-- white section bottom ends -->
+
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-4" id="mobilePitch">
+
+    <div class="d-flex mx-3 pt-2">
+      <button class="waves-light relative px-3 black-text" color='yellow' size='sm' mdbBtn mdbWavesEffect> Clear</button>
+      <button class="waves-light relative ml-auto px-3 black-text" color='yellow' size='sm' mdbBtn mdbWavesEffect> Auto
+        Pick</button>
+    </div>
+    <div class="small pl-3 py-3">
+    </div>
+
+    <!-- green section top starts -->
+    <div class="green darken-2">
+      <div>
+        <div class="white-text d-flex">
+          <div class="flex-fill d-flex px-2 py-1 align-items-center">
+            <h4 class=" font-weight-bold mr-auto">0 / 11</h4>
+            <span class="small">
+              <span class="d-block">Number of</span>players
+            </span>
+          </div>
+          <div class="flex-fill border-left d-flex px-2 py-1 align-items-center">
+
+            <h4 class="font-weight-bold">100</h4>
+            <span class="small ml-auto pb-2">
+              <span class="">Salary</span> left</span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- green section top ends -->
+
+
+    <!-- white section bottom starts -->
+
+    <div class="white">
+
+
+
+      <div class="d-flex">
+        <div class="btn-group mx-auto mt-3 mb-2" id="pitch-lineup">
+          <button class="waves-light relative " color="primary" mdbBtn mdbWavesEffect>Pitch</button>
+          <button class="waves-light relative black-text" color="white" mdbBtn mdbWavesEffect>Line Up</button>
+        </div>
+      </div>
+
+
+      <!-- 5-4-1 formation -->
+      <div class="">
+        <!-- pitch starts -->
+        <div id="pitch" class=" mt-3">
+          <div class="d-flex">
+            <div class="d-flex" id="leftAd">
+              <div id="leftAdShadow"></div>
+              <div id="leftAdBox"></div>
+            </div>
+
+            <div id="goalPost1"></div>
+
+            <div class="d-flex" id='rightAd'>
+              <div id="rightAdBox"></div>
+              <div id="rightAdShadow"></div>
+            </div>
+          </div>
+
+
+          
+
+          <div id="pitchBorder">
+
+              <div>
+                  <ul class="FW-5-4-1">
+                    <li>
+                      <a id='FW1-5-4-1' class="FW">
+                        <div id="player-body">
+                          <img src="assets/images/jersey_mockup.png" alt="">
+                        </div>
+                        <div class="mt-1 text-center">
+                          <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                          <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+            <div class="" id="pitch-inner">
+
+
+              <div class="penaltybox1border">
+                <div class="penaltybox1">
+                  <div class="goalboxborder1">
+                    <div class="goalbox1"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="" id="penaltyboxarc1"></div>
+
+
+
+
+
+              <div class="" id="halfwayline">
+                <div id="centercircle" class=""></div>
+
+              </div>
+
+
+
+              <div>
+                <ul class="Mid-5-4-1">
+                  <li>
+                    <a id='Mid1-5-4-1' class="Mid">
+                      <div id="player-body">
+                        <img src="assets/images/jersey_mockup.png" alt="">
+                      </div>
+                      <div class="mt-1 text-center">
+                        <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                        <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a id='Mid2-5-4-1' class="Mid">
+                      <div id="player-body">
+                        <img src="assets/images/jersey_mockup.png" alt="">
+                      </div>
+                      <div class="mt-1 text-center">
+                        <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                        <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a id='Mid3-5-4-1' class="Mid">
+                      <div id="player-body">
+                        <img src="assets/images/jersey_mockup.png" alt="">
+                      </div>
+                      <div class="mt-1 text-center">
+                        <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                        <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a id='Mid4-5-4-1' class="Mid">
+                      <div id="player-body">
+                        <img src="assets/images/jersey_mockup.png" alt="">
+                      </div>
+                      <div class="mt-1 text-center">
+                        <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                        <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+
+
+              <div>
+                <ul class="Def-5-4-1">
+                  <li>
+                    <a>
+                      <div id="player-body">
+                        <img src="assets/images/jersey_mockup.png" alt="">
+                      </div>
+                      <div class="mt-1 text-center">
+                        <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                        <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <div id="player-body">
+                        <img src="assets/images/jersey_mockup.png" alt="">
+                      </div>
+                      <div class="mt-1 text-center">
+                        <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                        <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <div id="player-body">
+                        <img src="assets/images/jersey_mockup.png" alt="">
+                      </div>
+                      <div class="mt-1 text-center">
+                        <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                        <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <div id="player-body">
+                        <img src="assets/images/jersey_mockup.png" alt="">
+                      </div>
+                      <div class="mt-1 text-center">
+                        <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                        <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <div id="player-body">
+                        <img src="assets/images/jersey_mockup.png" alt="">
+                      </div>
+                      <div class="mt-1 text-center">
+                        <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                        <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="" id="penaltyboxarc2"></div>
+              <div>
+                <ul class="goalie">
+                  <li>
+                    <a id="goalie">
+                      <div id="player-body">
+                        <img src="assets/images/jersey_mockup.png" alt="">
+                      </div>
+                      <div class="mt-1 text-center">
+                        <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                        <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="penaltybox2border">
+                <div class="penaltybox2">
+
+                  <div class="goalboxborder2">
+
+                    <div class="goalbox2">
+
+                      <div id="goalPost2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- pitch ends -->
+      </div>
+      <div class="d-flex">
+        <a class="relative waves-dark indigo mt-3 white-text text-center mx-auto" id="addSquadBtn" mdbBtn
+          mdbWavesEffect>Add Squad</a>
+      </div>
+
+
+
+      <!-- 5-3-2 formation -->
+      <div class="">
+        <!-- pitch starts -->
+        <div id="pitch" class=" mt-3">
+          <div class="d-flex">
+            <div class="d-flex" id="leftAd">
+              <div id="leftAdShadow"></div>
+              <div id="leftAdBox"></div>
+            </div>
+
+            <div id="goalPost1"></div>
+
+            <div class="d-flex" id='rightAd'>
+              <div id="rightAdBox"></div>
+              <div id="rightAdShadow"></div>
+            </div>
+          </div>
+
+
+
+          <div id="pitchBorder">
+
+            <div class="" id="pitch-inner">
+
+              <div class="corner-arc-top-left "></div>
+              <div class="corner-arc-top-right "></div>
+              <div class="penaltybox1border">
+                <div class="penaltybox1">
+                  <div class="goalboxborder1">
+                    <div class="goalbox1"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="" id="penaltyboxarc1"></div>
+
+
+
+
+
+              <div class="" id="halfwayline">
+                <div id="centercircle" class=""></div>
+
+              </div>
+
+              <div>
+                <a id="FW1-5-3-2" class="FW">
+                  <div id="player-body">FW1</div>
+                  <div class="mt-1 text-center">
+                    <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                    <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                  </div>
+                </a>
+                <a id="FW2-5-3-2" class="FW">
+                  <div id="player-body">FW2</div>
+                  <div class="mt-1 text-center">
+                    <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                    <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="Mid" id="Mid1-5-3-2">
+                  <div id="player-body">Mid1</div>
+                  <div class="mt-1 text-center">
+                    <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                    <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                  </div>
+                </a>
+                <a class="Mid" id="Mid2-5-3-2">
+                  <div id="player-body">Mid2</div>
+                  <div class="mt-1 text-center">
+                    <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                    <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                  </div>
+                </a>
+                <a class="Mid" id="Mid3-5-3-2">
+                  <div id="player-body">Mid3</div>
+                  <div class="mt-1 text-center">
+                    <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                    <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                  </div>
+                </a>
+
+              </div>
+
+              <div>
+                <a class='Def' id="Def1-5-3-2">
+                  <div id="player-body">Def1</div>
+                  <div class="mt-1 text-center">
+                    <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                    <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                  </div>
+                </a>
+                <a class='Def' id="Def2-5-3-2">
+                  <div id="player-body">Def2</div>
+                  <div class="mt-1 text-center">
+                    <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                    <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                  </div>
+                </a>
+                <a class='Def' id="Def3-5-3-2">
+                  <div id="player-body">Def3</div>
+                  <div class="mt-1 text-center">
+                    <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                    <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                  </div>
+                </a>
+                <a class='Def' id="Def4-5-3-2">
+                  <div id="player-body">Def4</div>
+                  <div class="mt-1 text-center">
+                    <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                    <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                  </div>
+                </a>
+                <a class='Def' id="Def5-5-3-2">
+                  <div id="player-body">Def5</div>
+                  <div class="mt-1 text-center">
+                    <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                    <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="" id="penaltyboxarc2"></div>
+              <a id="goalie">
+                <div id="player-body"></div>
+                <div class="mt-1 text-center">
+                  <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                  <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                </div>
+              </a>
+              <div class="penaltybox2border">
+                <div class="penaltybox2">
+
+                  <div class="goalboxborder2">
+
+                    <div class="goalbox2">
+
+                      <div id="goalPost2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- pitch ends -->
+      </div>
+      <div class="d-flex">
+        <a class="relative waves-dark indigo mt-3 white-text text-center mx-auto" id="addSquadBtn" mdbBtn
+          mdbWavesEffect>Add Squad</a>
+      </div>
+
+      <!-- 5-2-3 formation -->
+      <div class="">
+        <!-- pitch starts -->
+        <div id="pitch" class=" mt-3">
+          <div class="d-flex">
+            <div class="d-flex" id="leftAd">
+              <div id="leftAdShadow"></div>
+              <div id="leftAdBox"></div>
+            </div>
+
+            <div id="goalPost1"></div>
+
+            <div class="d-flex" id='rightAd'>
+              <div id="rightAdBox"></div>
+              <div id="rightAdShadow"></div>
+            </div>
+          </div>
+
+
+
+          <div id="pitchBorder">
+
+            <div class="" id="pitch-inner">
+
+              <div class="corner-arc-top-left "></div>
+              <div class="corner-arc-top-right "></div>
+              <div class="penaltybox1border">
+                <div class="penaltybox1">
+                  <div class="goalboxborder1">
+                    <div class="goalbox1"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="" id="penaltyboxarc1"></div>
+
+
+
+
+
+              <div class="" id="halfwayline">
+                <div id="centercircle" class=""></div>
+
+              </div>
+
+              <div>
+                <a class="FW" id="FW1-5-2-3">
+                  <div id="player-body">FW1</div>
+                  <div class="mt-1 text-center">
+                    <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                    <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                  </div>
+                </a>
+                <a class="FW" id="FW2-5-2-3">
+                  <div id="player-body">FW2</div>
+                  <div class="mt-1 text-center">
+                    <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                    <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                  </div>
+                </a>
+                <a class="FW" id="FW3-5-2-3">
+                  <div id="player-body">FW3</div>
+                  <div class="mt-1 text-center">
+                    <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                    <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a class="Mid" id="Mid1-5-2-3">
+                  <div id="player-body">Mid1</div>
+                  <div class="mt-1 text-center">
+                    <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                    <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                  </div>
+                </a>
+                <a class="Mid" id="Mid2-5-2-3">
+                  <div id="player-body">Mid2</div>
+                  <div class="mt-1 text-center">
+                    <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                    <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                  </div>
+                </a>
+
+                <div>
+                  <a class="Def" id="Def1-5-2-3">
+                    <div id="player-body">Def1</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Def" id="Def2-5-2-3">
+                    <div id="player-body">Def2</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Def" id="Def3-5-2-3">
+                    <div id="player-body">Def3</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Def" id="Def4-5-2-3">
+                    <div id="player-body">Def4</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Def" id="Def5-5-2-3">
+                    <div id="player-body">Def5</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="" id="penaltyboxarc2"></div>
+                <a id="goalie">
+                  <div id="player-body"></div>
+                  <div class="mt-1 text-center">
+                    <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                    <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                  </div>
+                </a>
+                <div class="penaltybox2border">
+                  <div class="penaltybox2">
+
+                    <div class="goalboxborder2">
+
+                      <div class="goalbox2">
+
+                        <div id="goalPost2"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- pitch ends -->
+        </div>
+        <div class="d-flex">
+          <a class="relative waves-dark indigo mt-3 white-text text-center mx-auto" id="addSquadBtn" mdbBtn
+            mdbWavesEffect>Add Squad</a>
+        </div>
+
+        <!-- 4-4-2 formation -->
+        <div class="">
+          <!-- pitch starts -->
+          <div id="pitch" class=" mt-3">
+            <div class="d-flex">
+              <div class="d-flex" id="leftAd">
+                <div id="leftAdShadow"></div>
+                <div id="leftAdBox"></div>
+              </div>
+
+              <div id="goalPost1"></div>
+
+              <div class="d-flex" id='rightAd'>
+                <div id="rightAdBox"></div>
+                <div id="rightAdShadow"></div>
+              </div>
+            </div>
+
+
+
+            <div id="pitchBorder">
+
+              <div class="" id="pitch-inner">
+
+                <div class="corner-arc-top-left "></div>
+                <div class="corner-arc-top-right "></div>
+                <div class="penaltybox1border">
+                  <div class="penaltybox1">
+                    <div class="goalboxborder1">
+                      <div class="goalbox1"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="" id="penaltyboxarc1"></div>
+
+
+
+
+
+                <div class="" id="halfwayline">
+                  <div id="centercircle" class=""></div>
+
+                </div>
+
+                <div>
+                  <a class="FW" id="FW1-4-4-2">
+                    <div id="player-body">FW1</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="FW" id="FW2-4-4-2">
+                    <div id="player-body">FW2</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div>
+                  <a class="Mid" id="Mid1-4-4-2">
+                    <div id="player-body">Mid1</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Mid" id="Mid2-4-4-2">
+                    <div id="player-body">Mid2</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Mid" id="Mid3-4-4-2">
+                    <div id="player-body">Mid3</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Mid" id="Mid4-4-4-2">
+                    <div id="player-body">Mid4</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div>
+                  <a class="Def" id="Def1-4-4-2">
+                    <div id="player-body">Def1</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Def" id="Def2-4-4-2">
+                    <div id="player-body">Def2</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Def" id="Def3-4-4-2">
+                    <div id="player-body">Def3</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Def" id="Def4-4-4-2">
+                    <div id="player-body">Def4</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="" id="penaltyboxarc2"></div>
+                <a id="goalie">
+                  <div id="player-body"></div>
+                  <div class="mt-1 text-center">
+                    <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                    <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                  </div>
+                </a>
+                <div class="penaltybox2border">
+                  <div class="penaltybox2">
+
+                    <div class="goalboxborder2">
+
+                      <div class="goalbox2">
+
+                        <div id="goalPost2"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- pitch ends -->
+        </div>
+        <div class="d-flex">
+          <a class="relative waves-dark indigo mt-3 white-text text-center mx-auto" id="addSquadBtn" mdbBtn
+            mdbWavesEffect>Add Squad</a>
+        </div>
+
+        <!-- 4-3-3 formation -->
+        <div class="">
+          <!-- pitch starts -->
+          <div id="pitch" class=" mt-3">
+            <div class="d-flex">
+              <div class="d-flex" id="leftAd">
+                <div id="leftAdShadow"></div>
+                <div id="leftAdBox"></div>
+              </div>
+
+              <div id="goalPost1"></div>
+
+              <div class="d-flex" id='rightAd'>
+                <div id="rightAdBox"></div>
+                <div id="rightAdShadow"></div>
+              </div>
+            </div>
+
+
+
+            <div id="pitchBorder">
+
+              <div class="" id="pitch-inner">
+
+                <div class="corner-arc-top-left "></div>
+                <div class="corner-arc-top-right "></div>
+                <div class="penaltybox1border">
+                  <div class="penaltybox1">
+                    <div class="goalboxborder1">
+                      <div class="goalbox1"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="" id="penaltyboxarc1"></div>
+
+
+
+
+
+                <div class="" id="halfwayline">
+                  <div id="centercircle" class=""></div>
+
+                </div>
+
+                <div>
+                  <a class="FW" id="FW1-4-3-3">
+                    <div id="player-body">FW1</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="FW" id="FW2-4-3-3">
+                    <div id="player-body">FW2</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="FW" id="FW3-4-3-3">
+                    <div id="player-body">FW3</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div>
+                  <a class="Mid" id="Mid1-4-3-3">
+                    <div id="player-body">Mid1</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Mid" id="Mid2-4-3-3">
+                    <div id="player-body">Mid2</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Mid" id="Mid3-4-3-3">
+                    <div id="player-body">Mid3</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div>
+                  <a class="Def" id="Def1-4-3-3">
+                    <div id="player-body">Def1</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Def" id="Def2-4-3-3">
+                    <div id="player-body">Def2</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Def" id="Def3-4-3-3">
+                    <div id="player-body">Def3</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Def" id="Def4-4-3-3">
+                    <div id="player-body">Def4</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="" id="penaltyboxarc2"></div>
+                <a id="goalie">
+                  <div id="player-body"></div>
+                  <div class="mt-1 text-center">
+                    <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                    <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                  </div>
+                </a>
+                <div class="penaltybox2border">
+                  <div class="penaltybox2">
+
+                    <div class="goalboxborder2">
+
+                      <div class="goalbox2">
+
+                        <div id="goalPost2"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- pitch ends -->
+        </div>
+        <div class="d-flex">
+          <a class="relative waves-dark indigo mt-3 white-text text-center mx-auto" id="addSquadBtn" mdbBtn
+            mdbWavesEffect>Add Squad</a>
+        </div>
+
+        <!-- 3-4-3 formation -->
+        <div class="">
+          <!-- pitch starts -->
+          <div id="pitch" class=" mt-3">
+            <div class="d-flex">
+              <div class="d-flex" id="leftAd">
+                <div id="leftAdShadow"></div>
+                <div id="leftAdBox"></div>
+              </div>
+
+              <div id="goalPost1"></div>
+
+              <div class="d-flex" id='rightAd'>
+                <div id="rightAdBox"></div>
+                <div id="rightAdShadow"></div>
+              </div>
+            </div>
+
+
+
+            <div id="pitchBorder">
+
+              <div class="" id="pitch-inner">
+
+                <div class="corner-arc-top-left "></div>
+                <div class="corner-arc-top-right "></div>
+                <div class="penaltybox1border">
+                  <div class="penaltybox1">
+                    <div class="goalboxborder1">
+                      <div class="goalbox1"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="" id="penaltyboxarc1"></div>
+
+
+
+
+
+                <div class="" id="halfwayline">
+                  <div id="centercircle" class=""></div>
+
+                </div>
+
+                <div>
+                  <a class="FW" id="FW1-3-4-3">
+                    <div id="player-body">FW1</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="FW" id="FW2-3-4-3">
+                    <div id="player-body">FW2</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="FW" id="FW3-3-4-3">
+                    <div id="player-body">FW3</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div>
+                  <a class="Mid" id="Mid1-3-4-3">
+                    <div id="player-body">Mid1</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Mid" id="Mid2-3-4-3">
+                    <div id="player-body">Mid2</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Mid" id="Mid3-3-4-3">
+                    <div id="player-body">Mid3</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Mid" id="Mid4-3-4-3">
+                    <div id="player-body">Mid4</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div>
+                  <a class="Def" id="Def1-3-4-3">
+                    <div id="player-body">Def1</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Def" id="Def2-3-4-3">
+                    <div id="player-body">Def2</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Def" id="Def3-3-4-3">
+                    <div id="player-body">Def3</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="" id="penaltyboxarc2"></div>
+                <a id="goalie">
+                  <div id="player-body"></div>
+                  <div class="mt-1 text-center">
+                    <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                    <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                  </div>
+                </a>
+                <div class="penaltybox2border">
+                  <div class="penaltybox2">
+
+                    <div class="goalboxborder2">
+
+                      <div class="goalbox2">
+
+                        <div id="goalPost2"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- pitch ends -->
+        </div>
+        <div class="d-flex">
+          <a class="relative waves-dark indigo mt-3 white-text text-center mx-auto" id="addSquadBtn" mdbBtn
+            mdbWavesEffect>Add Squad</a>
+        </div>
+
+        <!-- 3-5-2 formation -->
+        <div class="">
+          <!-- pitch starts -->
+          <div id="pitch" class=" mt-3">
+            <div class="d-flex">
+              <div class="d-flex" id="leftAd">
+                <div id="leftAdShadow"></div>
+                <div id="leftAdBox"></div>
+              </div>
+
+              <div id="goalPost1"></div>
+
+              <div class="d-flex" id='rightAd'>
+                <div id="rightAdBox"></div>
+                <div id="rightAdShadow"></div>
+              </div>
+            </div>
+
+
+
+            <div id="pitchBorder">
+
+              <div class="" id="pitch-inner">
+
+                <div class="corner-arc-top-left "></div>
+                <div class="corner-arc-top-right "></div>
+                <div class="penaltybox1border">
+                  <div class="penaltybox1">
+                    <div class="goalboxborder1">
+                      <div class="goalbox1"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="" id="penaltyboxarc1"></div>
+
+
+
+
+
+                <div class="" id="halfwayline">
+                  <div id="centercircle" class=""></div>
+
+                </div>
+
+                <div>
+                  <a class="FW" id="FW1-3-5-2">
+                    <div id="player-body">FW1</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="FW" id="FW2-3-5-2">
+                    <div id="player-body">FW2</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div>
+                  <a class="Mid" id="Mid1-3-5-2">
+                    <div id="player-body">Mid1</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Mid" id="Mid2-3-5-2">
+                    <div id="player-body">Mid2</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Mid" id="Mid3-3-5-2">
+                    <div id="player-body">Mid3</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Mid" id="Mid4-3-5-2">
+                    <div id="player-body">Mid4</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Mid" id="Mid5-3-5-2">
+                    <div id="player-body">Mid5</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div>
+                  <a class="Def" id="Def1-3-5-2">
+                    <div id="player-body">Def1</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Def" id="Def2-3-5-2">
+                    <div id="player-body">Def2</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Def" id="Def3-3-5-2">
+                    <div id="player-body">Def3</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="" id="penaltyboxarc2"></div>
+                <a id="goalie">
+                  <div id="player-body"></div>
+                  <div class="mt-1 text-center">
+                    <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                    <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                  </div>
+                </a>
+                <div class="penaltybox2border">
+                  <div class="penaltybox2">
+
+                    <div class="goalboxborder2">
+
+                      <div class="goalbox2">
+
+                        <div id="goalPost2"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- pitch ends -->
+        </div>
+        <div class="d-flex">
+          <a class="relative waves-dark indigo mt-3 white-text text-center mx-auto" id="addSquadBtn" mdbBtn
+            mdbWavesEffect>Add Squad</a>
+        </div>
+
+
+        <!-- 4-5-1 formation -->
+        <div class="">
+          <!-- pitch starts -->
+          <div id="pitch" class=" mt-3">
+            <div class="d-flex">
+              <div class="d-flex" id="leftAd">
+                <div id="leftAdShadow"></div>
+                <div id="leftAdBox"></div>
+              </div>
+
+              <div id="goalPost1"></div>
+
+              <div class="d-flex" id='rightAd'>
+                <div id="rightAdBox"></div>
+                <div id="rightAdShadow"></div>
+              </div>
+            </div>
+
+
+
+            <div id="pitchBorder">
+
+              <div class="" id="pitch-inner">
+
+                <div class="corner-arc-top-left "></div>
+                <div class="corner-arc-top-right "></div>
+                <div class="penaltybox1border">
+                  <div class="penaltybox1">
+                    <div class="goalboxborder1">
+                      <div class="goalbox1"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="" id="penaltyboxarc1"></div>
+
+
+
+
+
+                <div class="" id="halfwayline">
+                  <div id="centercircle" class=""></div>
+
+                </div>
+
+                <div>
+                  <a class="FW" id='FW1-4-5-1'>
+                    <div id="player-body">FW1</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div>
+                  <a class="Mid" id="Mid1-4-5-1">
+                    <div id="player-body">Mid1</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Mid" id="Mid2-4-5-1">
+                    <div id="player-body">Mid2</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Mid" id="Mid3-4-5-1">
+                    <div id="player-body">Mid3</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Mid" id="Mid4-4-5-1">
+                    <div id="player-body">Mid4</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Mid" id="Mid5-4-5-1">
+                    <div id="player-body">Mid5</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div>
+                  <a class="Def" id="Def1-4-5-1">
+                    <div id="player-body">Def1</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Def" id="Def2-4-5-1">
+                    <div id="player-body">Def2</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Def" id="Def3-4-5-1">
+                    <div id="player-body">Def3</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class="Def" id="Def4-4-5-1">
+                    <div id="player-body">Def4</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="" id="penaltyboxarc2"></div>
+                <a id="goalie">
+                  <div id="player-body"></div>
+                  <div class="mt-1 text-center">
+                    <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                    <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                  </div>
+                </a>
+                <div class="penaltybox2border">
+                  <div class="penaltybox2">
+
+                    <div class="goalboxborder2">
+
+                      <div class="goalbox2">
+
+                        <div id="goalPost2"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- pitch ends -->
+        </div>
+        <div class="d-flex">
+          <a class="relative waves-dark indigo mt-3 white-text text-center mx-auto" id="addSquadBtn" mdbBtn
+            mdbWavesEffect>Add Squad</a>
+        </div>
+
+        <!-- old pitch -->
+        <div class="">
+          <!-- pitch starts -->
+          <div id="pitch" class=" mt-3">
+            <div class="d-flex">
+              <div class="d-flex" id="leftAd">
+                <div id="leftAdShadow"></div>
+                <div id="leftAdBox"></div>
+              </div>
+
+              <div id="goalPost1"></div>
+
+              <div class="d-flex" id='rightAd'>
+                <div id="rightAdBox"></div>
+                <div id="rightAdShadow"></div>
+              </div>
+            </div>
+
+
+            <ul class="gk">
+              <li>
+                <div class="block">
+                  <span class="jersy">
+                    <span class="player-pos">GK</span>
+                    <!--Jersey image-->
+                    <!-- <img ng-src="assets/img/blankJersey.png" alt="" style="height:50px;"> -->
+                    <img alt="" style="height:50px;" src='assets/images/jersey.png'>
+
+                    <!--Condition for lineup-->
+                    <!--Remove button-->
+                    <span class="player-remove float-right"></span>
+                    <!--/Remove button-->
+                    <!--/Condition for lineup-->
+
+                    <!--Condition for Myleague-->
+                    <!--Remove button-->
+                    <!-- <span class="player-remove "></span> -->
+                    <!--/Remove button-->
+
+                    <!--Redo button-->
+                    <span class="player-undo"><i class="icon-return-alt"></i></span>
+                    <!--/Redo button-->
+
+                    <!--Swapped button-->
+                    <span class="player-swapped"></span>
+                    <!--/Swapped button-->
+
+                    <!--/Condition for myleague-->
+                  </span>
+                  <span class="name-position">
+                    <!-- {{($ctrl.playersArr[0]['last_name']) ? ($ctrl.playersArr[0]['first_name'] | showPlayerName:$ctrl.playersArr[0]['last_name']:'GK') : 'GK'}} -->
+                    Alisson
+                  </span>
+
+                  <!--Player salary-->
+                  <span class="value">
+                    00
+                  </span>
+                  <!--/Player salary-->
+
+                  <!--Player score-->
+                  <!-- <span class="value">
+                      {{($ctrl.playersArr[0]['score']) ? $ctrl.playersArr[0]['score']+' pts' : ''}}
+                    </span> -->
+                  <!--/Player score-->
+                </div>
+              </li>
+              <li>
+                <div class="block">
+                  <span class="jersy">
+                    <span class="player-pos">GK</span>
+                    <!--Jersey image-->
+                    <!-- <img ng-src="assets/img/blankJersey.png" alt="" style="height:50px;"> -->
+                    <img alt="" style="height:50px;" src='assets/images/jersey.png'>
+
+                    <!--Condition for lineup-->
+                    <!--Remove button-->
+                    <span class="player-remove float-right"></span>
+                    <!--/Remove button-->
+                    <!--/Condition for lineup-->
+
+                    <!--Condition for Myleague-->
+                    <!--Remove button-->
+                    <!-- <span class="player-remove "></span> -->
+                    <!--/Remove button-->
+
+                    <!--Redo button-->
+                    <span class="player-undo"><i class="icon-return-alt"></i></span>
+                    <!--/Redo button-->
+
+                    <!--Swapped button-->
+                    <span class="player-swapped"></span>
+                    <!--/Swapped button-->
+
+                    <!--/Condition for myleague-->
+                  </span>
+                  <span class="name-position">
+                    <!-- {{($ctrl.playersArr[0]['last_name']) ? ($ctrl.playersArr[0]['first_name'] | showPlayerName:$ctrl.playersArr[0]['last_name']:'GK') : 'GK'}} -->
+                    Alisson
+                  </span>
+
+                  <!--Player salary-->
+                  <span class="value">
+                    00
+                  </span>
+                  <!--/Player salary-->
+
+                  <!--Player score-->
+                  <!-- <span class="value">
+                      {{($ctrl.playersArr[0]['score']) ? $ctrl.playersArr[0]['score']+' pts' : ''}}
+                    </span> -->
+                  <!--/Player score-->
+                </div>
+              </li>
+            </ul>
+
+
+            <div id="pitchBorder">
+
+              <div class="" id="pitch-inner">
+
+
+                <div class="penaltybox1border">
+                  <div class="penaltybox1">
+                    <div class="goalboxborder1">
+
+                      <div class="goalbox1"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="" id="penaltyboxarc1"></div>
+
+
+
+
+
+                <div class="" id="halfwayline">
+                  <div id="centercircle" class=""></div>
+
+                </div>
+
+
+
+                <!-- <div>
+                  <a id='FW1-5-4-1' class="FW">
+                    <div id="player-body">FW1</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                </div>
+  
+                <div>
+                  <a id='Mid1-5-4-1' class="Mid">
+                    <div id="player-body">Mid1</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a id='Mid2-5-4-1' class="Mid">
+                    <div id="player-body">Mid2</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a id='Mid3-5-4-1' class="Mid">
+                    <div id="player-body">Mid3</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a id='Mid4-5-4-1' class="Mid">
+                    <div id="player-body">Mid4</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                </div>
+  
+                <div>
+                  <a class='Def' id="Def1-5-4-1">
+                    <div id="player-body">Def1</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class='Def' id="Def2-5-4-1">
+                    <div id="player-body">Def2</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class='Def' id="Def3-5-4-1">
+                    <div id="player-body">Def3</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class='Def' id="Def4-5-4-1">
+                    <div id="player-body">Def4</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                  <a class='Def' id="Def5-5-4-1">
+                    <div id="player-body">Def5</div>
+                    <div class="mt-1 text-center">
+                      <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                      <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                    </div>
+                  </a>
+                </div> -->
+
+                <div class="" id="penaltyboxarc2"></div>
+                <!-- <a id="goalie">
+                  <div id="player-body"></div>
+                  <div class="mt-1 text-center">
+                    <span class="d-block white-text danger-color-dark" id="player-name">Player</span>
+                    <span id="player-value" class="white-text d-block success-color rounded-bottom">Value</span>
+                  </div>
+                </a> -->
+                <div class="penaltybox2border">
+                  <div class="penaltybox2">
+
+                    <div class="goalboxborder2">
+
+                      <div class="goalbox2">
+
+                        <div id="goalPost2"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- pitch ends -->
+        </div>
+        <div class="d-flex">
+          <a class="relative waves-dark indigo mt-3 white-text text-center mx-auto" id="addSquadBtn" mdbBtn
+            mdbWavesEffect>Add Squad</a>
+        </div>
+      </div>
+
+
+      <!-- white section bottom ends -->
+
+    </div>
+
+
+
+
+  </div>
+  <!-- Red section ends -->
